@@ -1,0 +1,7 @@
+### Pacman ###
+yay
+brave.bin
+discord
+steam
+obs-studio
+

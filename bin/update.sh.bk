@@ -1,0 +1,79 @@
+#!/bin/bash
+
+#formating
+BOLD='\033[1m'
+YELLOW='\033[33m'
+UNDERLINE='\033[4m'
+RESET='\033[0m'
+RED='\033[0;31m'
+
+#Functions
+
+#Label makes a label for each update for debugging purposes so in the case of an error you know which package manager it was.
+Label() { echo -e ${BOLD}${YELLOW}${UNDERLINE}"${1^^}"${RESET}; }
+
+#General update check that takes input and sees if there's a matching package manager
+update() {
+	local packageManager=$1
+
+	if [[ !("${packageManager:0:1}" == "-") ]]; then
+		Label "$packageManager"
+		
+		if [[ "${packageManager,,}" == "pacman" ]]; then
+			sudo pacman -Syu --noconfirm
+		elif [[ "${packageManager,,}" == "yay" ]]  ; then
+			yay -Syu --noconfirm
+		elif [[ "${packageManager,,}" == "flatpak" ]]; then
+			flatpak update --assumeyes
+		else
+			echo -e ${BOLD}${RED}${UNDERLINE}'is not currently supported'${RESET}
+		fi
+	fi
+}
+
+
+#Main
+for packMan in "$@"; do
+	update "$packMan"
+done
+
+
+#Keeps varible to know if the computer needs a restart, for now I assume true
+needRestart="True"
+
+#Options with scripts, EX: ./update.sh -s will shutdown the computer after the updates.
+while getopts 'nsr' OPTION; do
+	case "$OPTION" in
+		#n = Needs, meant to be paired with one of the bottom two. This checks if the computer needs a restart.
+		n)
+			newKernal=$(file /boot/vmlinuz-linux-cachyos | grep -o 'version [^ ]*' | cut -d' ' -f2)
+			runningKernal=$(uname -r)
+
+			if [ "$newKernal" == "$runningKernal" ]; then
+				needRestart="False"
+				echo -e ${BOLD}${YELLOW}${UNDERLINE}'NO REBOOT NEEDED'${RESET}
+			fi
+			;;
+
+		#s = Shutdown, shuts down the computer after the script is finished. Can be paired with n for a shutdown only if needed.
+		s)
+			if [ "$needRestart" == "True" ]; then
+				echo -e ${BOLD}${YELLOW}${UNDERLINE}'SHUTTING DOWN'${RESET}
+				sleep 10
+				sudo shutdown -h now
+			fi
+			;;
+
+		#r = Restart, just like s except restarts instead of shuting down
+		r)
+			if [ "$needRestart" == "True" ]; then
+				echo -e ${BOLD}${YELLOW}${UNDERLINE}'REBOOTING'${RESET}
+				sleep 10
+				sudo reboot
+			fi
+			;;
+	esac
+done
+
+#Confirmation
+Label 'ALL DONE'
