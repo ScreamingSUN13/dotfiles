@@ -4,4 +4,22 @@ brave.bin
 discord
 steam
 obs-studio
+discord-screenaudio
+htop
 
+### Yay ###
+balena-etcher
+minecraft-launcher
+hakuneko-desktop-nightly
+koreader-bin
+xclicker
+tilix
+google-chrome
+discord-canary
+
+### Flatpak ###
+modrinth
+steamgriddb
+steam-rom-manager
+retroArch
+Sober
