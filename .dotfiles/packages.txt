@@ -7,6 +7,8 @@ obs-studio
 discord-screenaudio
 htop
 oh-my-posh
+nvim
+wl-clipboard
 
 ### Yay ###
 balena-etcher

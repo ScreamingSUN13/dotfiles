@@ -21,3 +21,5 @@ fish_add_path ~/bin
 atuin init fish | source
 
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+set -gx EDITOR nvim
