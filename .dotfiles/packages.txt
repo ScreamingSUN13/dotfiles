@@ -6,6 +6,7 @@ steam
 obs-studio
 discord-screenaudio
 htop
+oh-my-posh
 
 ### Yay ###
 balena-etcher

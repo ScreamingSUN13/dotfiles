@@ -16,6 +16,8 @@ function y
 end
 
 neofetch
-oh-my-posh init fish --config /home/stephenk/Documents/Backups/configbak/aliens.omp.json | source
+oh-my-posh init fish --config ~/.config/oh-my-posh/aliens.omp.json | source
 fish_add_path ~/bin
 atuin init fish | source
+
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
