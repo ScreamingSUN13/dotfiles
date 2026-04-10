@@ -1,8 +1,0 @@
-return {
-  window_background_image = "~/Pictures/e07ed1f76e8f266b8e12b5a05d2dd15e.jpg",
-  window_background_image_hsb = {
-    brightness = 0.05,  -- darken the image so text is readable
-    saturation = 1.0,
-    hue = 1.0,
-  },
-}

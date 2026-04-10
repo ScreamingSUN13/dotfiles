@@ -7,6 +7,9 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+export EDITOR=nvim
+export VISUAL=nvim
+
 eval "$(atuin init zsh)"
 
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
