@@ -1,0 +1,13 @@
+[theme]
+name = "catppuccin-macchiato-blue"
+
+[colors]
+AlertInfo = "#149A81"
+AlertWarn = "red"
+AlertError = "#FF9900"
+Annotation = "#19AC84"
+Base = "#1793D1"
+Guidance = "#939ab7"
+Important = "#197b63"
+Title = "white"
+Muted = "green"
