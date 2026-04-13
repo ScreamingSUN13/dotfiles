@@ -7,6 +7,11 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+clear() {
+    command clear
+    fastfetch
+}
+
 export EDITOR=nvim
 export VISUAL=nvim
 
