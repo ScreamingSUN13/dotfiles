@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 
 return {
-	font = wezterm.font("JetBrains Mono"),
+	font = wezterm.font("JetBrainsMono Nerd Font"),
 	font_size = 13.0,
 	color_scheme = "Terafox",
 	window_background_opacity = 1,
