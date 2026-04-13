@@ -9,6 +9,13 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Tabs
+vim.opt.expandtab = false
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+
+vim.g.mapleader = " "  -- space as leader key
+
 -- Plugins
 require("lazy").setup("plugins")
 
