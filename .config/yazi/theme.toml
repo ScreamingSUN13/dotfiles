@@ -91,7 +91,7 @@ unset_alt  = { fg = "red", bg = "gray" }
 [indicator]
 parent  = { reversed = false, bg = "#19483f", fg = "white" }
 current = { reversed = false, bg = "#19ad84", fg = "white" }
-preview = { underline = true, bg = "#197b63", fg = "white" }
+preview = { underline = false, bg = "#197b63", fg = "white" }
 padding = { open = "", close = "" }
 
 # : }}}
