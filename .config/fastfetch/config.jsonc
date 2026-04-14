@@ -97,28 +97,28 @@
 				{
             "type": "custom",
             "key": "󰧨  DE",
-            "keyColor": "#19ad84",
+            "keyColor": "yellow",
 						"format": "Aqua"
         },
         {
             "type": "lm",
             "key": "│ ├󰍁 ",
-            "keyColor": "#19ad84"
+            "keyColor": "yellow"
         },
         {
             "type": "wm",
             "key": "│ ├󱂬 ",
-            "keyColor": "#19ad84"
+            "keyColor": "yellow"
         },
         {
             "type": "wmtheme",
             "key": "│ ├󰉦 ",
-            "keyColor": "#19ad84"
+            "keyColor": "yellow"
         },
         {
             "type": "terminal",
             "key": "│ └󰆍 ",
-            "keyColor": "#19ad84"
+            "keyColor": "yellow"
         },
         {
             "type": "custom",
@@ -132,18 +132,18 @@
         {
             "type": "command",
             "key": "├ ›  OS Age   ",
-            "keyColor": "#197b63",
+            "keyColor": "#19ad84",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             "type": "uptime",
             "key": "├ ›  Uptime   ",
-            "keyColor": "#197b63"
+            "keyColor": "#19ad84"
         },
         {
             "type": "datetime",
             "key": "├ ›  DateTime ",
-            "keyColor": "#197b63"
+            "keyColor": "#19ad84"
         },
         {
             "type": "custom",
