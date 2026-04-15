@@ -12,4 +12,6 @@ return {
 		saturation = 0.9,
 		hue = 1.0,
 	},
+	initial_rows = 35,
+	initial_cols = 120
 }
