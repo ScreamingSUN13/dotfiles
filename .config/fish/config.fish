@@ -4,6 +4,8 @@
 #    # smth smth
 #end
 
+set -gx PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH   
+
 set -g fish_greeting
 
 function y
@@ -23,5 +25,3 @@ atuin init fish | source
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 set -gx EDITOR nvim
-
-alias ls='gls -lhFa --group-directories-first --color=auto'
