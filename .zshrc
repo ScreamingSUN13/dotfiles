@@ -20,3 +20,5 @@ eval "$(atuin init zsh)"
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/aliens.omp.json)"
+
+alias ls='gls -lhFa --group-directories-first --color=auto'   
