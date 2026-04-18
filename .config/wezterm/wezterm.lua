@@ -15,3 +15,5 @@ return {
 	initial_rows = 35,
 	initial_cols = 120
 }
+
+config.default_prog = { '/opt/homebrew/bin/fish', '-l' }   
