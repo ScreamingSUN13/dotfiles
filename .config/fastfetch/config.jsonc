@@ -68,14 +68,14 @@
             "type": "custom",
             "format": "\u001b[90m╭──────────────────────Software──────────────────────╮"
         },
-        {
+				{
             "type": "os",
-            "key": "  OS",
+            "key": "  OS",
             "keyColor": "#ff6900"
-        },
+				},
         {
             "type": "kernel",
-            "key": "│ ├󰌽 ",
+            "key": "│ ├ ",
             "keyColor": "#ff6900"
         },
         /*{

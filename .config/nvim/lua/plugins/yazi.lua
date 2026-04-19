@@ -19,6 +19,6 @@ return {
     })
   end,
   keys = {
-    { "y", "<cmd>Yazi<cr>",        desc = "Open yazi at current file" },
+    { "<leader>y", "<cmd>Yazi<cr>",        desc = "Open yazi at current file" },
   },
 }

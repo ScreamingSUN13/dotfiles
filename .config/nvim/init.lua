@@ -25,9 +25,11 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 local currentLuaLineTheme = require"themes.mainLuaLine"
 
+--[[
 require('lualine').setup {
 	options = { theme = currentLuaLineTheme }
 }
+]]
 
 vim.opt.number = true
 vim.opt.relativenumber = true

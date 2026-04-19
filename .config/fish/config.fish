@@ -24,4 +24,6 @@ alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 set -gx EDITOR nvim
 
-alias ls='gls -lhFa --group-directories-first --color=auto'
+#alias ls='gls -lhFa --group-directories-first --color=auto'
+
+alias ls='eza --git -lha'
