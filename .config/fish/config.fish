@@ -15,15 +15,18 @@ function y
 	rm -f -- "$tmp"
 end
 
+#Initializes fastfetch oh-my-posh and atuin
 fastfetch
 oh-my-posh init fish --config ~/.config/oh-my-posh/aliens.omp.json | source
 fish_add_path ~/bin
 atuin init fish | source
 
-alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
+#Set nvim as default
 set -gx EDITOR nvim
 
 #alias ls='gls -lhFa --group-directories-first --color=auto'
 
+#Aliases
 alias ls='eza --git -lha'
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias lconfig='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
