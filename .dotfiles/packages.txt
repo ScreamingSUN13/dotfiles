@@ -1,0 +1,15 @@
+-- Homebrew --
+lazygit
+ncdu
+eza
+bat
+fish
+btop
+coreutils
+atuin
+oh-my-posh
+yazi
+nvim
+tree-sitter
+fastfetch
+bash
