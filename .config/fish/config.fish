@@ -30,6 +30,6 @@ fish_add_path -a "/Applications/WezTerm.app/Contents/MacOS"
 #alias ls='gls -lhFa --group-directories-first --color=auto'
 
 #Aliases
-alias ls='eza --git -lha'
+alias ls='eza --git --group-directories-first -lhaU'
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias lconfig='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
