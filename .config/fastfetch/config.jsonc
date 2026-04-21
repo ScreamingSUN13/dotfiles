@@ -71,53 +71,53 @@
 				{
             "type": "os",
             "key": "  OS",
-            "keyColor": "#ff6900"
+            "keyColor": "#FF7500"
 				},
         {
             "type": "kernel",
             "key": "│ ├ ",
-            "keyColor": "#ff6900"
+            "keyColor": "#FF7500"
         },
         /*{
             "type": "bios",
             "key": "│ ├󰖡 ",
-            "keyColor": "#ff6900"
+            "keyColor": "#FF7500"
         },*/
         {
             "type": "packages",
             "key": "│ ├󰏗 ",
-            "keyColor": "#ff6900"
+            "keyColor": "#FF7500"
 				},
 				{
             "type": "shell",
             "key": "└ └󰞷 ",
-            "keyColor": "#ff6900"
+            "keyColor": "#FF7500"
         },
 				{
             "type": "custom",
             "key": "󰧨  DE",
-            "keyColor": "yellow",
+            "keyColor": "#FAC000",
 						"format": "Aqua"
         },
         {
             "type": "lm",
             "key": "│ ├󰍁 ",
-            "keyColor": "yellow"
+            "keyColor": "#FAC000"
         },
         {
             "type": "wm",
             "key": "│ ├󱂬 ",
-            "keyColor": "yellow"
+            "keyColor": "#FAC000"
         },
         {
             "type": "wmtheme",
             "key": "│ ├󰉦 ",
-            "keyColor": "yellow"
+            "keyColor": "#FAC000"
         },
         {
             "type": "terminal",
             "key": "│ └󰆍 ",
-            "keyColor": "yellow"
+            "keyColor": "#FAC000"
         },
         {
             "type": "custom",
