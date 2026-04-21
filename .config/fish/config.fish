@@ -24,6 +24,9 @@ atuin init fish | source
 #Set nvim as default
 set -gx EDITOR nvim
 
+#Wezterm CLI
+fish_add_path -a "/Applications/WezTerm.app/Contents/MacOS"
+
 #alias ls='gls -lhFa --group-directories-first --color=auto'
 
 #Aliases

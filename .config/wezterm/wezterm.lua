@@ -1,8 +1,11 @@
 local wezterm = require 'wezterm'
 
 return {
+	-- Font
 	font = wezterm.font("JetBrainsMono Nerd Font"),
 	font_size = 13.0,
+
+	-- Theming
 	color_scheme = "Terafox",
 	window_background_opacity = 1,
 	hide_tab_bar_if_only_one_tab = true,
@@ -12,10 +15,33 @@ return {
 		saturation = 0.9,
 		hue = 1.0,
 	},
-	initial_rows = 35,
-	initial_cols = 120,
-	default_prog = { '/opt/homebrew/bin/fish', '-l' },
 	cursor_blink_ease_in = 'Constant',
 	cursor_blink_ease_out = 'Constant',
-	animation_fps = 30
+	animation_fps = 30,
+
+	-- Sizing
+	initial_rows = 35,
+	initial_cols = 120,
+
+	-- Defaults
+	default_prog = { '/opt/homebrew/bin/fish', '-l' },
+
+	-- Key bindings
+	keys = {
+		{
+			key = 'w',
+			mods = 'CMD',
+			action = wezterm.action.CloseCurrentPane { confirm = true },
+		},
+		{
+			key = 'd',
+			mods = 'CMD',
+			action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+		},
+		{
+			key = 'd',
+			mods = 'CMD|SHIFT',
+			action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+		},
+	}
 }
