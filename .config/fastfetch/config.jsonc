@@ -68,57 +68,55 @@
             "type": "custom",
             "format": "\u001b[90m╭──────────────────────Software──────────────────────╮"
         },
-        {
+				{
             "type": "os",
             "key": "  OS",
-            "keyColor": "#ff6900"
-        },
+            "keyColor": "#FF7500"
+				},
         {
             "type": "kernel",
-            "key": "│ ├󰌽 ",
-            "keyColor": "#ff6900"
+            "key": "│ ├ ",
+            "keyColor": "#FF7500"
         },
         /*{
             "type": "bios",
             "key": "│ ├󰖡 ",
-            "keyColor": "#ff6900"
+            "keyColor": "#FF7500"
         },*/
         {
-            "type": "command",
+            "type": "packages",
             "key": "│ ├󰏗 ",
-            "keyColor": "#ff6900",
-						"text": "./pkgcount.bash"
+            "keyColor": "#FF7500"
 				},
 				{
             "type": "shell",
             "key": "└ └󰞷 ",
-            "keyColor": "#ff6900"
+            "keyColor": "#FF7500"
         },
 				{
-            "type": "custom",
+            "type": "de",
             "key": "󰧨  DE",
-            "keyColor": "yellow",
-						"format": "Aqua"
+            "keyColor": "#FAC000",
         },
         {
             "type": "lm",
             "key": "│ ├󰍁 ",
-            "keyColor": "yellow"
+            "keyColor": "#FAC000"
         },
         {
             "type": "wm",
             "key": "│ ├󱂬 ",
-            "keyColor": "yellow"
+            "keyColor": "#FAC000"
         },
         {
             "type": "wmtheme",
             "key": "│ ├󰉦 ",
-            "keyColor": "yellow"
+            "keyColor": "#FAC000"
         },
         {
             "type": "terminal",
             "key": "│ └󰆍 ",
-            "keyColor": "yellow"
+            "keyColor": "#FAC000"
         },
         {
             "type": "custom",

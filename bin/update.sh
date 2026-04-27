@@ -6,17 +6,24 @@ YELLOW='\033[33m'
 UNDERLINE='\033[4m'
 RESET='\033[0m'
 
+# Label makes a label for each update for debugging purposes so in the case of an error you know which package manager it was.
+Label() { echo -e ${BOLD}${YELLOW}${UNDERLINE}"${1^^}"${RESET};}
+
 #pacman
-echo -e ${BOLD}${YELLOW}${UNDERLINE}'PACMAN'${RESET}
+Label PACMAN
 sudo pacman -Syu --noconfirm
 
 #yay
-echo -e ${BOLD}${YELLOW}${UNDERLINE}'YAY'${RESET}
+Label YAY
 yay -Syu --noconfirm
 
 #flatpak
-echo -e ${BOLD}${YELLOW}${UNDERLINE}'FLATPAK'${RESET}
+Label FLATPAK
 flatpak update --assumeyes
+
+#lazy-nvim
+Label lazy-nvim
+nvim --headless "+Lazy! sync" +qa
 
 needRestart="True"
 
