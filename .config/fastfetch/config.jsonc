@@ -86,9 +86,10 @@
             "keyColor": "#FF7500"
         },*/
         {
-            "type": "packages",
+            "type": "command",
             "key": "│ ├󰏗 ",
-            "keyColor": "#FF7500"
+            "keyColor": "#FF7500",
+						"text": "./pkgcount.bash"
 				},
 				{
             "type": "shell",
