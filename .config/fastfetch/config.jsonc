@@ -82,7 +82,7 @@
         },
         /*{
             "type": "bios",
-            "key": "│ ├󰖡 ",
+            "key": "│ ├󰖡",
             "keyColor": "#FF7500"
         },*/
         {
@@ -99,7 +99,7 @@
 				{
             "type": "de",
             "key": "󰧨  DE",
-            "keyColor": "#FAC000",
+            "keyColor": "#FAC000"
         },
         {
             "type": "lm",
