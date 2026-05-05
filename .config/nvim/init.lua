@@ -29,3 +29,5 @@ require('lualine').setup {
 	options = { theme = currentLuaLineTheme }
 }
 
+vim.opt.number = true
+vim.opt.relativenumber = true

@@ -1,10 +1,10 @@
-source /usr/share/cachyos-fish-config/cachyos-config.fish
-
 # overwrite greeting
 # potentially disabling fastfetch
 #function fish_greeting
 #    # smth smth
 #end
+
+set -g fish_greeting
 
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
@@ -15,11 +15,16 @@ function y
 	rm -f -- "$tmp"
 end
 
+#Initializes fastfetch oh-my-posh and atuin
 fastfetch
 oh-my-posh init fish --config ~/.config/oh-my-posh/aliens.omp.json | source
 fish_add_path ~/bin
 atuin init fish | source
 
-alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
+#Set nvim as default
 set -gx EDITOR nvim
+
+#Aliases
+alias ls='eza --git --group-directories-first -lhaU'
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias lconfig='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
