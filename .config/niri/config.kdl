@@ -3,16 +3,24 @@
 // Check the wiki for a full description of the configuration:
 // https://niri-wm.github.io/niri/Configuration:-Introduction
 
+// Noctalia syncing
+include "~/.config/niri/colors.kdl"
+
 // Custom rules
 window-rule {
     default-column-width { proportion 1.0; }
+}
+
+//Qt themeing
+environment {
+    QT_QPA_PLATFORMTHEME "qt6ct"
 }
 
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Input
 input {
-		focus-follows-mouse
+		focus-follows-mouse max-scroll-amount="0%"
     keyboard {
         xkb {
             // You can set rules, model, layout, variant and options.
@@ -274,10 +282,10 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
+// spawn-at-startup "waybar"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
-// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+spawn-sh-at-startup "qs -c noctalia-shell"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -365,11 +373,11 @@ binds {
 
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
-    Mod+Shift+Slash { show-hotkey-overlay; }
+    Mod+Shift+Slash hotkey-overlay-title="Hotkey cheatsheet" { spawn-sh "qs -c noctalia-shell ipc call plugin:keybind-cheatsheet toggle"; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Space hotkey-overlay-title="Run an Application: noctalia" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
@@ -569,6 +577,7 @@ binds {
 
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
+		Mod+Alt+F { set-column-width "50%"; }
 
     // While maximize-column leaves gaps and borders around the window,
     // maximize-window-to-edges doesn't: the window expands to the edges of the screen.
@@ -646,18 +655,21 @@ output "DP-3" {
   position x=0 y=0
 	mode "1920x1080@143.996"
 	scale 1
+	backdrop-color "#071412"
 }
 // LG
 output "DP-1" {
   position x=1920 y=0
 	mode "1920x1080@143.981"
 	scale 1
+	backdrop-color "#071412"
 }
 // Philips
 output "DP-2" {
 	position x=3840 y=0
 	mode "1920x1080@100.000"
 	scale 1
+	backdrop-color "#071412"
 }
 
 // Startups
@@ -666,3 +678,6 @@ spawn-at-startup "swaybg" "-o" "DP-1" "-i" "/home/stephenk/Pictures/Wallpapers/O
 spawn-at-startup "swaybg" "-o" "DP-2" "-i" "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg" "-m" "fill"
 
 spawn-at-startup "xwayland-satellite"
+
+include "./noctalia.kdl"
+
