@@ -17,7 +17,7 @@ end
 
 #Initializes fastfetch oh-my-posh and atuin
 fastfetch
-oh-my-posh init fish --config ~/.config/oh-my-posh/aliens.omp.json | source
+oh-my-posh init fish --config ~/.config/oh-my-posh/noctalia.json | source
 fish_add_path ~/bin
 atuin init fish | source
 
