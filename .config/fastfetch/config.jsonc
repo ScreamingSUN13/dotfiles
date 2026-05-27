@@ -38,27 +38,27 @@
 				{
             "type": "cpu",
             "key": "├ ",
-            "keyColor": "#1793D1"
+            "keyColor": "#e6b450"
         },
         {
             "type": "gpu",
             "key": "├󰢮 ",
-            "keyColor": "#1793D1"
+            "keyColor": "#e6b450"
         },
         {
             "type": "memory",
             "key": "├ ",
-            "keyColor": "#1793D1"
+            "keyColor": "#e6b450"
         },
 				{
 						"type": "board",
 						"key": "├󰚗 ",
-						"keyColor": "#1793D1"
+						"keyColor": "#e6b450"
 				},
         {
             "type": "disk",
             "key": "├󰋊 ",
-            "keyColor": "#1793D1",
+            "keyColor": "#e6b450",
 						"unitType": "si"
         },
         {
@@ -73,53 +73,48 @@
 				{
             "type": "os",
             "key": "  OS",
-            "keyColor": "#FF7500"
+            "keyColor": "#aad94c"
 				},
         {
             "type": "kernel",
             "key": "│ ├ ",
-            "keyColor": "#FF7500"
+            "keyColor": "#aad94c"
         },
         /*{
             "type": "bios",
             "key": "│ ├󰖡",
-            "keyColor": "#FF7500"
+            "keyColor": "#aad94c"
         },*/
         {
             "type": "command",
             "key": "│ ├󰏗 ",
-            "keyColor": "#FF7500",
+            "keyColor": "#aad94c",
 						"text": "./pkgcount.bash"
 				},
 				{
             "type": "shell",
             "key": "└ └󰞷 ",
-            "keyColor": "#FF7500"
-        },
-				{
-            "type": "de",
-            "key": "󰧨  DE",
-            "keyColor": "#FAC000"
-        },
-        {
-            "type": "lm",
-            "key": "│ ├󰍁 ",
-            "keyColor": "#FAC000"
+            "keyColor": "#aad94c"
         },
         {
             "type": "wm",
-            "key": "│ ├󱂬 ",
-            "keyColor": "#FAC000"
+            "key": "󰧨  WM",
+            "keyColor": "#aad94c"
         },
         {
             "type": "wmtheme",
             "key": "│ ├󰉦 ",
-            "keyColor": "#FAC000"
+            "keyColor": "#aad94c"
         },
         {
             "type": "terminal",
-            "key": "│ └󰆍 ",
-            "keyColor": "#FAC000"
+            "key": "│ ├󰆍 ",
+            "keyColor": "#aad94c"
+        },
+        {
+            "type": "lm",
+            "key": "│ └󰍁 ",
+            "keyColor": "#aad94c"
         },
         {
             "type": "custom",
@@ -133,18 +128,18 @@
         {
             "type": "command",
             "key": "├ ›  OS Age   ",
-            "keyColor": "#19ad84",
+            "keyColor": "#39bae6",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             "type": "uptime",
             "key": "├ ›  Uptime   ",
-            "keyColor": "#19ad84"
+            "keyColor": "#39bae6"
         },
         {
             "type": "datetime",
             "key": "├ ›  DateTime ",
-            "keyColor": "#19ad84"
+            "keyColor": "#39bae6"
         },
         {
             "type": "custom",
