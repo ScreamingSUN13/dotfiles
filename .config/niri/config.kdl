@@ -6,9 +6,17 @@
 // Noctalia syncing
 include "~/.config/niri/colors.kdl"
 
+// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
+spawn-sh-at-startup "qs -c noctalia-shell"
+
 // Custom rules
 window-rule {
     default-column-width { proportion 1.0; }
+}
+
+window-rule {
+    match app-id="kitty"
+    draw-border-with-background false
 }
 
 //Qt themeing
@@ -284,8 +292,6 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // spawn-at-startup "waybar"
 
-// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
-spawn-sh-at-startup "qs -c noctalia-shell"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
