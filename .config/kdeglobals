@@ -138,13 +138,13 @@ BrowserApplication=google-chrome.desktop
 ColorScheme=Noctalia
 ColorSchemeHash=6d8d52469df94cc34e53504f564839b62461c506
 LastUsedCustomAccentColor=25,172,132
+Name=noctalia
 TerminalApplication=tilix
 TerminalService=com.gexperts.Tilix.desktop
 UseSystemBell=true
 XftHintStyle=hintslight
 XftSubPixel=none
 font=MesloLGL Nerd Font Mono,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-Name=noctalia
 
 [KDE]
 AnimationDurationFactor=0.25

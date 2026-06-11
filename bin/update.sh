@@ -23,7 +23,8 @@ flatpak update --assumeyes
 
 #lazy-nvim
 Label lazy-nvim
-nvim --headless "+Lazy! sync" +qa
+echo "Updating Lazy plugins..."
+nvim --headless "+Lazy! sync" +qa 2>/dev/null
 
 needRestart="True"
 
