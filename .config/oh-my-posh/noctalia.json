@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "upgrade": {
+    "source": "cdn",
+    "interval": "168h",
+    "auto": false,
+    "notice": false
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{.UserName}}@{{.HostName}} ",
+					"foreground": "#8e959e",
+          "background": "#1e222a",
+          "type": "session",
+          "style": "diamond"
+        },
+        {
+          "options": {
+            "style": "full"
+          },
+          "trailing_diamond": "\ue0b0",
+          "template": " {{.Path}} ",
+          "foreground": "#0b0e14",
+          "background": "#e6b450",
+          "type": "path",
+          "style": "diamond"
+        },
+        {
+          "template": " {{.HEAD}} ",
+          "foreground": "#0b0e14",
+          "powerline_symbol": "\ue0b0",
+          "background": "#39bae6",
+          "type": "git",
+          "style": "powerline"
+        },
+        {
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b4",
+          "template": " {{if .Error}}{{.Error}}{{else}}{{if .Venv}}{{.Venv}} {{end}}{{.Full}}{{end}} ",
+          "foreground": "#0b0e14",
+          "background": "#d95757",
+          "type": "python",
+          "style": "diamond"
+        }
+      ]
+    }
+  ],
+  "version": 4,
+  "final_space": true
+}

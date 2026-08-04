@@ -73,48 +73,48 @@
 				{
             "type": "os",
             "key": "  OS",
-            "keyColor": "#aad94c"
+            "keyColor": "#3cb371"
 				},
         {
             "type": "kernel",
             "key": "│ ├ ",
-            "keyColor": "#aad94c"
+            "keyColor": "#3cb371"
         },
         /*{
             "type": "bios",
             "key": "│ ├󰖡",
-            "keyColor": "#aad94c"
+            "keyColor": "#3cb371"
         },*/
         {
             "type": "command",
             "key": "│ ├󰏗 ",
-            "keyColor": "#aad94c",
+            "keyColor": "#3cb371",
 						"text": "./pkgcount.bash"
 				},
 				{
             "type": "shell",
             "key": "└ └󰞷 ",
-            "keyColor": "#aad94c"
+            "keyColor": "#3cb371"
         },
         {
             "type": "wm",
             "key": "󰧨  WM",
-            "keyColor": "#aad94c"
+            "keyColor": "#3cb371"
         },
         {
             "type": "wmtheme",
             "key": "│ ├󰉦 ",
-            "keyColor": "#aad94c"
+            "keyColor": "#3cb371"
         },
         {
             "type": "terminal",
             "key": "│ ├󰆍 ",
-            "keyColor": "#aad94c"
+            "keyColor": "#3cb371"
         },
         {
             "type": "lm",
             "key": "│ └󰍁 ",
-            "keyColor": "#aad94c"
+            "keyColor": "#3cb371"
         },
         {
             "type": "custom",

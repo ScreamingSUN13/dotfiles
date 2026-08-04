@@ -259,7 +259,7 @@ layout {
     struts {
 			left 8
 			right 8
-		}
+    }
 }
 
 // Add lines like this to spawn processes at startup.
@@ -270,7 +270,10 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // spawn-at-startup "waybar"
 
-hotkey-overlay 
+hotkey-overlay {
+	skip-at-startup
+}
+ 
 
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -295,11 +298,15 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // The wiki explains how to configure individual animations:
 // https://niri-wm.github.io/niri/Configuration:-Animations
 animations {
-    workspace-switch {
-        duration-ms 300
-        curve "ease-out-cubic"
+		workspace-switch {
+      spring damping-ratio=0.7 stiffness=400 epsilon=0.0001
     }
-
+		horizontal-view-movement {
+      spring damping-ratio=0.7 stiffness=400 epsilon=0.0001
+    }
+		overview-open-close {
+      spring damping-ratio=0.7 stiffness=400 epsilon=0.0001
+    }
     window-open {
         duration-ms 700
         curve "linear"
@@ -390,6 +397,12 @@ animations {
                 return burn_close(coords_geo, size_geo);
             }
         "
+    }
+		window-movement {
+        spring damping-ratio=0.6 stiffness=200 epsilon=0.0001
+    }
+    window-resize {
+        spring damping-ratio=0.6 stiffness=200 epsilon=0.0001
     }
     // Uncomment to turn off all animations.
     // off
@@ -733,16 +746,18 @@ binds {
 // Output arrangment
 // BenQ
 output "DP-3" {
-  position x=0 y=0
 	mode "1920x1080@143.996"
 	scale 1
+
+  position x=0 y=0
 	backdrop-color "#0b0e14"
 }
 // LG
 output "DP-1" {
-  position x=1920 y=0
 	mode "1920x1080@143.981"
 	scale 1
+
+  position x=1920 y=0
 	backdrop-color "#0b0e14"
 }
 // Philips
@@ -753,16 +768,14 @@ output "Philips Consumer Electronics Company PHL 241V8LB TP02535011084" {
 	backdrop-color "#0b0e14"
 }
 // Samsung TV 
-output "Samsung Electric Company SAMSUNG 0x01000E00" {
+/*output "Samsung Electric Company SAMSUNG 0x01000E00" {
 	//position x=3840 y=-2160
 	//mode "3840x2160@60.000"
 	position x=3840 y=-1080
 	mode "1920x1080@60.000"
 	scale 1
 	backdrop-color "#0b0e14"
-}
-// Auto deactivate the TV 
-spawn-at-startup "kanshi"
+}*/
 
 // Startups
 spawn-at-startup "swaybg" "-o" "DP-3" "-i" "/home/stephenk/Pictures/Wallpapers/OuterWildsSolarSystem.png" "-m" "fill"
@@ -778,3 +791,19 @@ include "./noctalia.kdl"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 spawn-at-startup "qs" "-c" "noctalia-shell"
+output "HDMI-A-1" {
+    mode "1920x1080@60.000"
+
+    scale 1.0
+
+    transform "normal"
+    position x=3802 y=1080
+}
+output "DP-2" {
+    mode "1920x1080@100.000"
+
+    scale 1.0
+
+    transform "normal"
+    position x=3802 y=2160
+}

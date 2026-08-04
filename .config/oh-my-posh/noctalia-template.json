@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "upgrade": {
+    "source": "cdn",
+    "interval": "168h",
+    "auto": false,
+    "notice": false
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ .UserName }}@{{ .HostName }} ",
+					"foreground": "{{colors.on_surface_variant.default.hex}}",
+          "background": "{{colors.surface_variant.default.hex}}",
+          "type": "session",
+          "style": "diamond"
+        },
+        {
+          "options": {
+            "style": "full"
+          },
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ .Path }} ",
+          "foreground": "{{colors.on_primary.default.hex}}",
+          "background": "{{colors.primary.default.hex}}",
+          "type": "path",
+          "style": "diamond"
+        },
+        {
+          "template": " {{ .HEAD }} ",
+          "foreground": "{{colors.on_tertiary.default.hex}}",
+          "powerline_symbol": "\ue0b0",
+          "background": "{{colors.tertiary.default.hex}}",
+          "type": "git",
+          "style": "powerline"
+        },
+        {
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b4",
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "foreground": "{{colors.on_error.default.hex}}",
+          "background": "{{colors.error.default.hex}}",
+          "type": "python",
+          "style": "diamond"
+        }
+      ]
+    }
+  ],
+  "version": 4,
+  "final_space": true
+}
