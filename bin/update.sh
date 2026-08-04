@@ -23,8 +23,15 @@ flatpak update --assumeyes
 
 #lazy-nvim
 Label lazy-nvim
-echo "Updating Lazy plugins..."
 nvim --headless "+Lazy! sync" +qa 2>/dev/null
+
+#framework
+if command -v fwupdmgr &> /dev/null; then
+	Label "framework firmware"
+	sudo fwupdmgr refresh -y
+	sudo fwupdmgr update -y --no-reboot-check
+fi
+
 
 needRestart="True"
 
