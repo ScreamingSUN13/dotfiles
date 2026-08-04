@@ -1,0 +1,13 @@
+[theme]
+name = "noctalia"
+
+[colors]
+AlertInfo = "#3cb371"
+AlertWarn = "#d95757"
+AlertError = "#595f6a"
+Annotation = "#262c36"
+Base = "#e6b450"
+Guidance = "#3cb371"
+Important = "#39bae6"
+Title = "#e6b450"
+Muted = "#e6b450"
