@@ -1,6 +1,6 @@
 #!/bin/bash
 # ~/.local/bin/init-env-dotfiles.sh
-git clone --bare git@github.com:user/dotfiles.git $HOME/.dotfiles
+git clone --bare git@github.com:ScreamingSUN13/dotfiles $HOME/.dotfiles
 function config {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
