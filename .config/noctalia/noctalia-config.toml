@@ -1,3 +1,8 @@
+[backdrop]
+blur_intensity = 0.5
+enabled = true
+tint_intensity = 0.29999999999999999
+
 [bar.default]
 background_opacity = 0.3899999912828207
 border = "on_primary"
@@ -28,11 +33,6 @@ start = [ "launcher", "workspaces", "active_window", "media", "audio_visualizer"
     opacity = 0.77999997138977051
     padding = 6.0
     radius = 9.0
-
-[backdrop]
-enabled        = true
-blur_intensity = 0.5    # 0.0 = no blur, 1.0 = max blur
-tint_intensity = 0.3    # 0.0 = no tint, 1.0 = fully opaque tint
 
 [[control_center.shortcuts]]
 type = "wifi"
@@ -195,6 +195,7 @@ enabled = [ "oldirtty/color_picker" ]
 
 [shell]
 app_icon_color = "secondary"
+avatar_path = "/home/stephenk/Pictures/PFPs/ScreamingSUN.jpg"
 
     [shell.panel]
     open_near_click_control_center = true
@@ -234,11 +235,23 @@ post_hook = "pkill -SIGUSR1 fish"
 builtin = "Catppuccin"
 custom_palette = "OuterWilds"
 mode = "dark"
-source = "custom"
+source = "builtin"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt" ]
     community_ids = [ "discord", "neovim", "steam", "lazygit", "yazi" ]
+
+        [theme.templates.user.atuin]
+        input_path = "~/.config/atuin/themes/template.toml"
+        output_path = "~/.config/atuin/themes/noctalia.toml"
+
+        [theme.templates.user.fastfetch]
+        input_path = "~/.config/fastfetch/configTemplate.jsonc"
+        output_path = "~/.config/fastfetch/config.jsonc"
+
+        [theme.templates.user.oh_my_posh]
+        input_path = "$XDG_CONFIG_HOME/oh-my-posh/noctalia-template.json"
+        output_path = "$XDG_CONFIG_HOME/oh-my-posh/noctalia.json"
 
 [wallpaper]
 directory = "/home/stephenk/Pictures/Wallpapers"

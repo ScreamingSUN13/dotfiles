@@ -31,3 +31,4 @@ set -gx EDITOR nvim
 alias ls='eza --git --group-directories-first -lhaU'
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias lconfig='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias noctaliaSync='noctalia config export > ~/.config/noctalia/config.toml'
