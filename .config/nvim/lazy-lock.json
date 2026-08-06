@@ -12,7 +12,7 @@
   "lualine.nvim": { "branch": "master", "commit": "221ce6b2d999187044529f49da6554a92f740a96" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "67029ccdac1ef8941e13b826417bc0ffac24cc86" },
   "mason.nvim": { "branch": "main", "commit": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d" },
-  "neo-tree.nvim": { "branch": "main", "commit": "a31bd096e3cdf12dfcf1ca4c60abe82e73968c5d" },
+  "neo-tree.nvim": { "branch": "main", "commit": "6679b9395526b52ddb2b137fcd5255dab71c5a58" },
   "nightfox.nvim": { "branch": "main", "commit": "4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
   "nvim-autopairs": { "branch": "master", "commit": "7b9923abad60b903ece7c52940e1321d39eccc79" },
@@ -26,5 +26,5 @@
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "b25b749b9db64d375d782094e2b9dce53ad53a40" },
   "telescope.nvim": { "branch": "master", "commit": "5255aa27c422de944791318024167ad5d40aad20" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" },
-  "yazi.nvim": { "branch": "main", "commit": "ffb9e0d6552eb95be810ae13269b7e0533d0875f" }
+  "yazi.nvim": { "branch": "main", "commit": "397a44a1edc4aac207f040ef155e8dab24ca48b9" }
 }

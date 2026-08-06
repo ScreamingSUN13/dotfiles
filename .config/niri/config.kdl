@@ -18,8 +18,8 @@ window-rule {
 
 // Set the overview wallpaper on the backdrop.
 layer-rule {
-  match namespace="^noctalia-overview*"
-  place-within-backdrop true
+    match namespace="^noctalia-backdrop"
+    place-within-backdrop true
 }
 
 //Qt themeing
