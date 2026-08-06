@@ -52,12 +52,7 @@ pinned = [ "brave-browser" ]
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [
-    "lockscreen-login-box@HDMI-A-1",
-    "lockscreen-login-box@DP-2",
-    "lockscreen-login-box@DP-3",
-    "lockscreen-login-box@DP-1"
-]
+widget_order = [ "lockscreen-login-box@eDP-1" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -164,6 +159,31 @@ widget_order = [
         show_unlock_hint = true
         show_weather = true
 
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 720.0
+    cy = 778.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
 [plugins]
 enabled = [ "oldirtty/color_picker" ]
 
@@ -212,10 +232,10 @@ source = "custom"
 directory = "/home/stephenk/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
 
     [wallpaper.last]
-    path = "/home/stephenk/Pictures/Wallpapers/OneShot.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
 
     [wallpaper.monitors.DP-1]
     path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
@@ -228,6 +248,9 @@ directory = "/home/stephenk/Pictures/Wallpapers"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/stephenk/Pictures/Wallpapers/OneShot.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
 
     [[wallpaper.favorite]]
     custom_palette = "OuterWilds"
