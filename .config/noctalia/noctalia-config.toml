@@ -1,0 +1,282 @@
+[bar.default]
+background_opacity = 0.3899999912828207
+border = "on_primary"
+capsule = true
+capsule_fill = "on_primary"
+capsule_opacity = 0.7799999825656414
+capsule_radius = 9
+color = "secondary"
+contact_shadow = true
+end = [ "group:g2", "tray", "volume", "battery", "notifications", "control-center", "session" ]
+font_family = "JetBrains Mono"
+font_weight = 600
+icon_color = "primary"
+margin_ends = 0
+radius = 43
+radius_bottom_left = 80
+radius_bottom_right = 80
+radius_top_left = 0
+radius_top_right = 0
+start = [ "launcher", "workspaces", "active_window", "media", "audio_visualizer" ]
+
+    [[bar.default.capsule_group]]
+    enabled = true
+    fill = "on_primary"
+    id = "g2"
+    members = [ "cpu", "sysmon", "ram" ]
+    opacity = 0.77999997138977051
+    padding = 6.0
+    radius = 9.0
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "nightlight"
+
+[[control_center.shortcuts]]
+type = "clipboard"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[dock]
+pinned = [ "brave-browser" ]
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@HDMI-A-1",
+    "lockscreen-login-box@DP-2",
+    "lockscreen-login-box@DP-3",
+    "lockscreen-login-box@DP-1"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-2"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-3"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[plugins]
+enabled = [ "oldirtty/color_picker" ]
+
+[shell.panel]
+open_near_click_control_center = true
+
+[templates.atuin]
+input_path = "~/.config/atuin/themes/template.toml"
+output_path = "~/.config/atuin/themes/noctalia.toml"
+
+[templates.background]
+input_path = "~/.config/niri/configTemplate.kdl"
+output_path = "~/.config/niri/config.kdl"
+post_hook = "niri msg action reload-config"
+
+[templates.fastfetch]
+input_path = "~/.config/fastfetch/configTemplate.jsonc"
+output_path = "~/.config/fastfetch/config.jsonc"
+
+[templates.niri]
+input_path = "~/.config/noctalia/templates/niri.kdl"
+output_path = "~/.config/niri/colors.kdl"
+post_hook = "niri msg action reload-config"
+
+[templates.nvim-base16]
+input_path = "~/.config/nvim/lua/matugen-template.lua"
+output_path = "~/.config/nvim/lua/matugen.lua"
+post_hook = "pkill -SIGUSR1 nvim"
+
+[templates.ohmyposh]
+input_path = "~/.config/oh-my-posh/noctalia-template.json"
+output_path = "~/.config/oh-my-posh/noctalia.json"
+post_hook = "pkill -SIGUSR1 fish"
+
+[theme]
+builtin = "Catppuccin"
+custom_palette = "OuterWilds"
+mode = "dark"
+source = "custom"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt" ]
+    community_ids = [ "discord", "neovim", "steam", "lazygit", "yazi" ]
+
+[wallpaper]
+directory = "/home/stephenk/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+
+    [wallpaper.last]
+    path = "/home/stephenk/Pictures/Wallpapers/OneShot.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
+
+    [wallpaper.monitors.DP-3]
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSolarSystem.png"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/stephenk/Pictures/Wallpapers/OneShot.jpg"
+
+    [[wallpaper.favorite]]
+    custom_palette = "OuterWilds"
+    palette_source = "custom"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    custom_palette = "OuterWilds"
+    palette_source = "custom"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSolarSystem.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    custom_palette = "OuterWilds"
+    palette_source = "custom"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
+    theme_mode = "dark"
+
+[widget.audio_visualizer]
+bands = 20
+centered = false
+color_1 = "secondary"
+color_2 = "secondary"
+mirrored = false
+width = 102
+
+[widget.clock]
+anchor = true
+format = "{:%-I:%M %p | %a, %b %d, %Y}"
+
+[widget.control-center]
+glyph = "menu-2"
+
+[widget.cpu]
+glyph = "cpu"
+
+[widget.launcher]
+custom_image = "/usr/share/icons/cachyos.svg"
+custom_image_colorize = true
+icon_color = "secondary"
+scale = 1.1500000000000001
+
+[widget.media]
+art_size = 96
+hide_when_no_media = true
+max_length = 242
+title_scroll = "on_hover"
+
+[widget.sysmon]
+glyph = "device-gamepad"
+stat = "gpu_usage"
