@@ -1,28 +1,42 @@
  local M = {}
 
- function M.setup()
-   require('base16-colorscheme').setup {
-     -- Background tones
-     base00 = '#0b0e14', -- Default Background
-     base01 = '#1e222a', -- Lighter Background (status bars)
-     base02 = '#262c36', -- Selection Background
-     base03 = '#595f6a', -- Comments, Invisibles
-     -- Foreground tones
-     base04 = '#8e959e', -- Dark Foreground (status bars)
-     base05 = '#d1d1c7', -- Default Foreground
-     base06 = '#d1d1c7', -- Light Foreground
-     base07 = '#d1d1c7', -- Lightest Foreground
-     -- Accent colors
-     base08 = '#d95757', -- Variables, XML Tags, Errors
-     base09 = '#39bae6', -- Integers, Constants
-     base0A = '#3cb371', -- Classes, Search Background
-     base0B = '#e6b450', -- Strings, Diff Inserted
-     base0C = '#8ed8f1', -- Regex, Escape Chars
-     base0D = '#efcf8f', -- Functions, Methods
-     base0E = '#96e9bb', -- Keywords, Storage
-     base0F = '#700e0e', -- Deprecated, Embedded Tags
-   }
- end
+function M.setup()
+  require('base16-colorscheme').setup({
+    base00 = '#0b0e14',
+    base01 = '#1e222a',
+    base02 = '#272c36',
+    base03 = '#595f6a',
+    base04 = '#8e959e',
+    base05 = '#d1d1c7',
+    base06 = '#d1d1c7',
+    base07 = '#d1d1c7',
+    base08 = '#d95757',
+    base09 = '#39bae6',
+    base0A = '#3cb371',
+    base0B = '#e6b450',
+    base0C = '#8ed8f1',
+    base0D = '#efcf8f',
+    base0E = '#96e9bb',
+    base0F = '#700e0e',
+  })
+
+  local hi = function(group, opts)
+    vim.api.nvim_set_hl(0, group, opts)
+  end
+
+  hi('TelescopeNormal',         { fg = '#d1d1c7',          bg = '#0b0e14' })
+  hi('TelescopeBorder',         { fg = '#595f6a',             bg = '#0b0e14' })
+  hi('TelescopePromptNormal',   { fg = '#d1d1c7',          bg = '#0b0e14' })
+  hi('TelescopePromptBorder',   { fg = '#595f6a',             bg = '#0b0e14' })
+  hi('TelescopePromptPrefix',   { fg = '#e6b450',             bg = '#0b0e14' })
+  hi('TelescopePromptCounter',  { fg = '#8e959e',  bg = '#0b0e14' })
+  hi('TelescopePromptTitle',    { fg = '#0b0e14',             bg = '#e6b450' })
+  hi('TelescopePreviewTitle',   { fg = '#0b0e14',             bg = '#3cb371' })
+  hi('TelescopeResultsTitle',   { fg = '#0b0e14',             bg = '#39bae6' })
+  hi('TelescopeSelection',      { fg = '#d1d1c7',          bg = '#272c36' })
+  hi('TelescopeSelectionCaret', { fg = '#e6b450',             bg = '#272c36' })
+  hi('TelescopeMatching',       { fg = '#e6b450',             bold = true })
+end
 
  -- Register a signal handler for SIGUSR1 (matugen updates)
  local signal = vim.uv.new_signal()
