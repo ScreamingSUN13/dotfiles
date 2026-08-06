@@ -7,7 +7,22 @@ return {
   config = function()
     require("mason").setup()
     require("mason-lspconfig").setup({
-      ensure_installed = { "lua_ls", "pyright", "ts_ls" },
+      ensure_installed = { 
+				"lua_ls",           -- Lua
+				"pyright",           -- Python
+				"ts_ls",              -- JS/TS
+				"rust_analyzer",     -- Rust
+				"gopls",              -- Go
+				"clangd",             -- C/C++
+				"bashls",              -- Bash/fish scripts
+				"jsonls",              -- JSON
+				"yamlls",              -- YAML
+				"taplo",                -- TOML
+				"html",                  -- HTML
+				"cssls",                 -- CSS
+				"marksman",           -- Markdown
+				"dockerls",            -- Dockerfile
+			},
       automatic_installation = true,
     })
 
