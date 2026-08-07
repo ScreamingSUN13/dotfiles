@@ -190,6 +190,11 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         show_unlock_hint = true
         show_weather = true
 
+[nightlight]
+enabled = true
+temperature_day = 10000
+temperature_night = 4100
+
 [plugins]
 enabled = [ "oldirtty/color_picker" ]
 
@@ -235,7 +240,7 @@ post_hook = "pkill -SIGUSR1 fish"
 builtin = "Catppuccin"
 custom_palette = "OuterWilds"
 mode = "dark"
-source = "builtin"
+source = "custom"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt" ]
