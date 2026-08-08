@@ -29,7 +29,7 @@ start = [ "launcher", "workspaces", "active_window", "media", "audio_visualizer"
     enabled = true
     fill = "on_primary"
     id = "g2"
-    members = [ "cpu", "sysmon", "ram" ]
+    members = [ "cpu", "GPU", "ram", "Storage" ]
     opacity = 0.77999997138977051
     padding = 6.0
     radius = 9.0
@@ -201,6 +201,7 @@ enabled = [ "oldirtty/color_picker" ]
 [shell]
 app_icon_color = "secondary"
 avatar_path = "/home/stephenk/Pictures/PFPs/ScreamingSUN.jpg"
+font_family = "JetBrains Mono Medium"
 
     [shell.panel]
     open_near_click_control_center = true
@@ -304,6 +305,15 @@ fill_color = "surface"
     path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
     theme_mode = "dark"
 
+[widget.GPU]
+custom_image = "/home/stephenk/Pictures/Icon/vga-card.png"
+custom_image_colorize = true
+type = "sysmon"
+
+[widget.Storage]
+stat = "disk_used_pct"
+type = "sysmon"
+
 [widget.active_window]
 max_length = 140
 
@@ -337,6 +347,10 @@ art_size = 96
 hide_when_no_media = true
 max_length = 141
 title_scroll = "on_hover"
+
+[widget.ram]
+custom_image = "/home/stephenk/Pictures/Icon/ram.png"
+custom_image_colorize = true
 
 [widget.sysmon]
 glyph = "device-gamepad"
