@@ -49,5 +49,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][c1eb7a49-c62d-407d-9f4a-6650a07ef082][cf7df531-6c93-451d-a83f-a6ce1d0459f5]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Xwayland]
-Scale=1
+Scale=1.7
