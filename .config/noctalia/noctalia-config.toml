@@ -201,6 +201,7 @@ enabled = [ "oldirtty/color_picker" ]
 [shell]
 app_icon_color = "secondary"
 avatar_path = "/home/stephenk/Pictures/PFPs/ScreamingSUN.jpg"
+corner_radius_scale = 1.4000000208616257
 font_family = "JetBrains Mono Medium"
 
     [shell.panel]
@@ -239,13 +240,14 @@ post_hook = "pkill -SIGUSR1 fish"
 
 [theme]
 builtin = "Catppuccin"
+community_palette = "Osaka jade"
 custom_palette = "OuterWilds"
 mode = "dark"
 source = "custom"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt" ]
-    community_ids = [ "discord", "neovim", "steam", "lazygit", "yazi" ]
+    community_ids = [ "discord", "gimp", "libreoffice", "neovim", "steam", "fastfetch", "lazygit", "yazi" ]
 
         [theme.templates.user.atuin]
         input_path = "~/.config/atuin/themes/template.toml"
@@ -308,6 +310,7 @@ fill_color = "surface"
 [widget.GPU]
 custom_image = "/home/stephenk/Pictures/Icon/vga-card.png"
 custom_image_colorize = true
+stat = "gpu_usage"
 type = "sysmon"
 
 [widget.Storage]
