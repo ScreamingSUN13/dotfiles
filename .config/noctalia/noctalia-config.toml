@@ -55,10 +55,13 @@ type = "power_profile"
 [dock]
 pinned = [ "brave-browser" ]
 
+[location]
+auto_locate = true
+
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1" ]
+widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@eDP-1" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -96,6 +99,8 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
     cx = 960.0
     cy = 898.0
     output = "DP-2"
+    placement_height = 0.0
+    placement_width = 0.0
     rotation = 0.0
     type = "login_box"
 
@@ -171,6 +176,8 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
     cx = 720.0
     cy = 778.0
     output = "eDP-1"
+    placement_height = 960.0
+    placement_width = 1440.0
     rotation = 0.0
     type = "login_box"
 
@@ -194,6 +201,11 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
 enabled = true
 temperature_day = 10000
 temperature_night = 4100
+
+[osd]
+background_opacity = 0.79999998211860657
+orientation = "vertical"
+position_vertical = "center_right"
 
 [plugins]
 enabled = [ "oldirtty/color_picker" ]
@@ -244,10 +256,11 @@ community_palette = "Osaka jade"
 custom_palette = "OuterWilds"
 mode = "dark"
 source = "custom"
+wallpaper_scheme = "vibrant"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt" ]
-    community_ids = [ "discord", "gimp", "libreoffice", "neovim", "steam", "fastfetch", "lazygit", "yazi" ]
+    community_ids = [ "zen-browser", "discord", "gimp", "libreoffice", "neovim", "steam", "fastfetch", "lazygit", "yazi" ]
 
         [theme.templates.user.atuin]
         input_path = "~/.config/atuin/themes/template.toml"

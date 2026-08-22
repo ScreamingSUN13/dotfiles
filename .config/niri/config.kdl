@@ -16,6 +16,12 @@ window-rule {
     draw-border-with-background false
 }
 
+window-rule {
+    match app-id="zen"
+    draw-border-with-background false
+}
+
+
 // Set the overview wallpaper on the backdrop.
 layer-rule {
     match namespace="^noctalia-backdrop"
