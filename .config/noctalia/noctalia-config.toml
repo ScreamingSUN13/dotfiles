@@ -11,9 +11,10 @@ capsule_border = "primary"
 capsule_fill = "on_primary"
 capsule_opacity = 0.7799999825656414
 capsule_radius = 9
+center = [ "cat_2", "clock", "cat" ]
 color = "secondary"
 contact_shadow = true
-end = [ "group:g2", "tray", "volume", "battery", "notifications", "control-center", "session" ]
+end = [ "group:g1", "group:g3", "notifications", "group:g2", "control-center", "session" ]
 font_family = "JetBrains Mono"
 font_weight = 600
 icon_color = "primary"
@@ -23,13 +24,40 @@ radius_bottom_left = 80
 radius_bottom_right = 80
 radius_top_left = 0
 radius_top_right = 0
-start = [ "launcher", "workspaces", "active_window", "media", "audio_visualizer" ]
+start = [ "launcher", "workspaces", "media" ]
 
     [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "start"
+    border = "primary"
     enabled = true
     fill = "on_primary"
     id = "g2"
-    members = [ "cpu", "GPU", "ram", "Storage" ]
+    members = [ "tray", "bar", "clipboard", "widget" ]
+    opacity = 0.77999997138977051
+    padding = 6.0
+    radius = 9.0
+
+    [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "start"
+    border = "primary"
+    enabled = true
+    fill = "on_primary"
+    id = "g1"
+    members = [ "battery", "cpu", "GPU", "ram", "Storage" ]
+    opacity = 0.77999997138977051
+    padding = 6.0
+    radius = 9.0
+
+    [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "start"
+    border = "primary"
+    enabled = true
+    fill = "on_primary"
+    id = "g3"
+    members = [ "volume", "input_volume" ]
     opacity = 0.77999997138977051
     padding = 6.0
     radius = 9.0
@@ -51,6 +79,17 @@ type = "clipboard"
 
 [[control_center.shortcuts]]
 type = "power_profile"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
 
 [dock]
 pinned = [ "brave-browser" ]
@@ -208,7 +247,17 @@ orientation = "vertical"
 position_vertical = "center_right"
 
 [plugins]
-enabled = [ "oldirtty/color_picker" ]
+enabled = [
+    "oldirtty/color_picker",
+    "noctalia/bitwarden",
+    "yuuto/calculator",
+    "noctalia/bongocat",
+    "blackbartblues/keymap",
+    "frai3mega/battery-graph",
+    "blackbartblues/audio-switcher",
+    "yugaaank/better-clock",
+    "tmelik/system-monitor"
+]
 
 [shell]
 app_icon_color = "secondary"
@@ -216,8 +265,14 @@ avatar_path = "/home/stephenk/Pictures/PFPs/ScreamingSUN.jpg"
 corner_radius_scale = 1.4000000208616257
 font_family = "JetBrains Mono Medium"
 
+    [shell.launcher]
+    pinned = [ "zen", "vesktop", "steam" ]
+
     [shell.panel]
     open_near_click_control_center = true
+
+    [shell.screen_corners]
+    size = 66
 
     [shell.shadow]
     direction = "down_right"
@@ -256,7 +311,7 @@ community_palette = "Osaka jade"
 custom_palette = "OuterWilds"
 mode = "dark"
 source = "custom"
-wallpaper_scheme = "vibrant"
+wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt" ]
@@ -279,10 +334,10 @@ directory = "/home/stephenk/Pictures/Wallpapers"
 fill_color = "surface"
 
     [wallpaper.default]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [wallpaper.last]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [wallpaper.monitor.eDP-1]
     fill_color = "surface"
@@ -300,7 +355,7 @@ fill_color = "surface"
     path = "/home/stephenk/Pictures/Wallpapers/OneShot.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [[wallpaper.favorite]]
     custom_palette = "OuterWilds"
@@ -342,6 +397,17 @@ mirrored = false
 show_when_idle = true
 width = 115
 
+[widget.bar]
+type = "yuuto/calculator:bar"
+
+[widget.cat]
+input_devices = [ "/dev/input/by-path/*-event-kbd", "/dev/input/by-path/*mouse" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_2]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
 [widget.clock]
 anchor = true
 format = "{:%-I:%M %p | %a, %b %d, %Y}"
@@ -371,3 +437,11 @@ custom_image_colorize = true
 [widget.sysmon]
 glyph = "device-gamepad"
 stat = "gpu_usage"
+
+[widget.tray]
+drawer = true
+hide_passive = false
+pinned = [ "clock" ]
+
+[widget.widget]
+type = "oldirtty/color_picker:widget"
