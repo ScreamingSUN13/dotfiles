@@ -33,7 +33,7 @@ start = [ "launcher", "workspaces", "media" ]
     enabled = true
     fill = "on_primary"
     id = "g2"
-    members = [ "tray", "bar", "clipboard", "widget" ]
+    members = [ "custom_button_2", "tray", "bar", "clipboard", "widget" ]
     opacity = 0.77999997138977051
     padding = 6.0
     radius = 9.0
@@ -418,6 +418,10 @@ glyph = "menu-2"
 [widget.cpu]
 glyph = "cpu"
 
+[widget.custom_button_2]
+glyph = "caret-down"
+type = "custom_button"
+
 [widget.launcher]
 custom_image = "/usr/share/icons/cachyos.svg"
 custom_image_colorize = true
@@ -441,7 +445,7 @@ stat = "gpu_usage"
 [widget.tray]
 drawer = true
 hide_passive = false
-pinned = [ "clock" ]
+pinned = []
 
 [widget.widget]
 type = "oldirtty/color_picker:widget"
