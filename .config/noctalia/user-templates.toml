@@ -26,3 +26,7 @@ output_path = "~/.config/atuin/themes/noctalia.toml"
 [theme.templates.user.oh_my_posh]
 input_path  = "$XDG_CONFIG_HOME/oh-my-posh/noctalia-template.json"
 output_path = "$XDG_CONFIG_HOME/oh-my-posh/noctalia.json"
+
+[theme.templates.user.cliamp]
+input_path  = "~/.config/cliamp/themes/noctaliaTemplate"
+output_path = "~/.config/cliamp/themes/noctalia.toml"
