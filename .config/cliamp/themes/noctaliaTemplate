@@ -1,6 +1,6 @@
 accent    = "{{colors.primary.default.hex}}"
-bright_fg = "{{colors.secondary.default.hex}}"
-fg        = "{{colors.tertiary.default.hex}}"
+bright_fg = "{{colors.on_surface_variant.default.hex}}"
+fg        = "{{colors.secondary.default.hex}}"
 green     = "{{colors.terminal_normal_green.default.hex}}"
 yellow    = "{{colors.terminal_normal_yellow.default.hex}}"
 red       = "{{colors.terminal_normal_red.default.hex}}"
