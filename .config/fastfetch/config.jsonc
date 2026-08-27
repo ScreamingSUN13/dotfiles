@@ -38,27 +38,27 @@
 				{
             "type": "cpu",
             "key": "├ ",
-            "keyColor": "#e6b450"
+            "keyColor": "#ef9b27"
         },
         {
             "type": "gpu",
             "key": "├󰢮 ",
-            "keyColor": "#e6b450"
+            "keyColor": "#ef9b27"
         },
         {
             "type": "memory",
             "key": "├ ",
-            "keyColor": "#e6b450"
+            "keyColor": "#ef9b27"
         },
 				{
 						"type": "board",
 						"key": "├󰚗 ",
-						"keyColor": "#e6b450"
+						"keyColor": "#ef9b27"
 				},
         {
             "type": "disk",
             "key": "├󰋊 ",
-            "keyColor": "#e6b450",
+            "keyColor": "#ef9b27",
 						"unitType": "si"
         },
         {

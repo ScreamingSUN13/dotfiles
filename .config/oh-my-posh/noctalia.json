@@ -27,7 +27,7 @@
           "trailing_diamond": "\ue0b0",
           "template": " {{.Path}} ",
           "foreground": "#0b0e14",
-          "background": "#e6b450",
+          "background": "#ef9b27",
           "type": "path",
           "style": "diamond"
         },
