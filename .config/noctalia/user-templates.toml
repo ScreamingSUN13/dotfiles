@@ -30,3 +30,7 @@ output_path = "$XDG_CONFIG_HOME/oh-my-posh/noctalia.json"
 [theme.templates.user.cliamp]
 input_path  = "~/.config/cliamp/themes/noctaliaTemplate"
 output_path = "~/.config/cliamp/themes/noctalia.toml"
+
+[theme.templates.user.lualine]
+input_path = "~/.config/nvim/lua/themes/noctaliaTemplate.lua"
+output_path = "~/.config/nvim/lua/themes/noctalia.lua"

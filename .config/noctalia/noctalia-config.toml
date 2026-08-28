@@ -20,7 +20,7 @@ order = [ "default", "sideDefault" ]
     color = "secondary"
     concave_edge_corners = false
     contact_shadow = true
-    end = [ "group:g1", "group:g3", "group:g6", "notifications", "group:g2", "control-center", "session" ]
+    end = [ "group:g1", "group:g3", "group:g6", "notifications", "group:g2", "group:g10", "session" ]
     font_family = "JetBrains Mono"
     font_weight = 600
     icon_color = "primary"
@@ -190,6 +190,28 @@ order = [ "default", "sideDefault" ]
             "cat_16",
             "cat_17",
             "cat_18"
+        ]
+        opacity = 0.48999997973442078
+        padding = 7.0
+        radius = 7.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g10"
+        members = [
+            "control-center",
+            "bluetooth",
+            "power_profile",
+            "caffeine",
+            "Divider",
+            "lock_keys",
+            "Divider",
+            "privacy",
+            "brightness"
         ]
         opacity = 0.48999997973442078
         padding = 7.0
