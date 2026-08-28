@@ -3,64 +3,232 @@ blur_intensity = 0.5
 enabled = true
 tint_intensity = 0.29999999999999999
 
-[bar.default]
-background_opacity = 0.3899999912828207
-border = "on_primary"
-capsule = true
-capsule_border = "primary"
-capsule_fill = "on_primary"
-capsule_opacity = 0.7799999825656414
-capsule_radius = 9
-center = [ "cat_2", "clock", "cat" ]
-color = "secondary"
-contact_shadow = true
-end = [ "group:g1", "group:g3", "notifications", "group:g2", "control-center", "session" ]
-font_family = "JetBrains Mono"
-font_weight = 600
-icon_color = "primary"
-margin_ends = 0
-radius = 43
-radius_bottom_left = 80
-radius_bottom_right = 80
-radius_top_left = 0
-radius_top_right = 0
-start = [ "launcher", "workspaces", "media" ]
+[bar]
+order = [ "default", "sideDefault" ]
 
-    [[bar.default.capsule_group]]
-    accordion = true
-    accordion_direction = "start"
+    [bar.default]
+    background_opacity = 0.7799999825656414
     border = "primary"
-    enabled = true
-    fill = "on_primary"
-    id = "g2"
-    members = [ "custom_button_2", "tray", "bar", "clipboard", "widget" ]
-    opacity = 0.77999997138977051
-    padding = 6.0
-    radius = 9.0
+    capsule = true
+    capsule_border = "primary"
+    capsule_fill = "on_primary"
+    capsule_opacity = 0.48999998904764652
+    capsule_padding = 7.0
+    capsule_radius = 7
+    capsule_thickness = 0.82999998517334461
+    center = [ "group:g7" ]
+    color = "secondary"
+    concave_edge_corners = false
+    contact_shadow = true
+    end = [ "group:g1", "group:g3", "group:g6", "notifications", "group:g2", "control-center", "session" ]
+    font_family = "JetBrains Mono"
+    font_weight = 600
+    icon_color = "primary"
+    margin_edge = 10
+    margin_ends = 20
+    radius = 43
+    radius_bottom_left = 10
+    radius_bottom_right = 10
+    radius_top_left = 10
+    radius_top_right = 10
+    start = [ "group:g8", "group:g4", "group:g5", "group:g9" ]
 
-    [[bar.default.capsule_group]]
-    accordion = true
-    accordion_direction = "start"
-    border = "primary"
-    enabled = true
-    fill = "on_primary"
-    id = "g1"
-    members = [ "battery", "cpu", "GPU", "ram", "Storage" ]
-    opacity = 0.77999997138977051
-    padding = 6.0
-    radius = 9.0
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g2"
+        members = [ "custom_button_2", "tray", "bar", "clipboard", "widget" ]
+        opacity = 0.77999997138977051
+        padding = 6.0
+        radius = 7.0
 
-    [[bar.default.capsule_group]]
-    accordion = true
-    accordion_direction = "start"
-    border = "primary"
-    enabled = true
-    fill = "on_primary"
-    id = "g3"
-    members = [ "volume", "input_volume" ]
-    opacity = 0.77999997138977051
-    padding = 6.0
-    radius = 9.0
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g1"
+        members = [ "battery", "cpu", "GPU", "ram", "Storage" ]
+        opacity = 0.80000001192092896
+        padding = 6.0
+        radius = 7.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g3"
+        members = [ "volume", "widget_2", "input_volume" ]
+        opacity = 0.77999997138977051
+        padding = 6.0
+        radius = 7.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g2"
+        members = [ "custom_button_2", "tray", "bar", "clipboard", "widget" ]
+        opacity = 0.77999997138977051
+        padding = 6.0
+        radius = 9.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g1"
+        members = [ "battery", "cpu", "GPU", "ram", "Storage" ]
+        opacity = 0.77999997138977051
+        padding = 6.0
+        radius = 9.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g3"
+        members = [ "volume", "input_volume" ]
+        opacity = 0.77999997138977051
+        padding = 6.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g4"
+        members = [ "media", "Title" ]
+        opacity = 0.48999997973442078
+        padding = 7.0
+        radius = 7.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g5"
+        members = [ "workspaces", "ActiveName" ]
+        opacity = 0.48999997973442078
+        padding = 7.0
+        radius = 7.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g6"
+        members = [ "network", "network_tx", "network_rx" ]
+        opacity = 0.48999997973442078
+        padding = 7.0
+        radius = 7.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g7"
+        members = [ "clock", "Divider", "Date" ]
+        opacity = 0.48999997973442078
+        padding = 7.0
+        radius = 7.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g8"
+        members = [ "launcher", "launcher_2" ]
+        opacity = 0.48999997973442078
+        padding = 7.0
+        radius = 7.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border = "primary"
+        enabled = true
+        fill = "on_primary"
+        id = "g9"
+        members = [
+            "cat_2",
+            "cat_3",
+            "cat_4",
+            "cat_5",
+            "cat_6",
+            "cat_7",
+            "cat_8",
+            "cat_9",
+            "cat_10",
+            "cat_11",
+            "cat_12",
+            "cat_13",
+            "cat_14",
+            "cat_15",
+            "cat_16",
+            "cat_17",
+            "cat_18"
+        ]
+        opacity = 0.48999997973442078
+        padding = 7.0
+        radius = 7.0
+
+    [bar.sideDefault]
+    background_opacity = 0.3899999912828207
+    border = "on_primary"
+    capsule = true
+    capsule_border = "primary"
+    capsule_fill = "on_primary"
+    capsule_opacity = 0.7799999825656414
+    capsule_radius = 9
+    center = [ "cat_2", "clock", "cat" ]
+    color = "secondary"
+    contact_shadow = true
+    enabled = false
+    end = [ "notifications", "control-center", "session" ]
+    font_family = "JetBrains Mono"
+    font_weight = 600
+    icon_color = "primary"
+    margin_ends = 0
+    position = "left"
+    radius = 43
+    radius_bottom_left = 80
+    radius_bottom_right = 80
+    radius_top_left = 0
+    radius_top_right = 0
+    start = [ "launcher", "workspaces", "media" ]
+
+[calendar]
+enabled = true
+
+    [calendar.account.personal_google]
+    color = "primary"
+    name = "Main"
+    type = "google"
+
+[control_center.calendar]
+event_time_format = "{:%-I:%M %p}"
 
 [[control_center.shortcuts]]
 type = "wifi"
@@ -93,6 +261,24 @@ widget_order = []
 
 [dock]
 pinned = [ "brave-browser" ]
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
 
 [location]
 auto_locate = true
@@ -246,6 +432,12 @@ background_opacity = 0.79999998211860657
 orientation = "vertical"
 position_vertical = "center_right"
 
+[plugin_settings."alexander/game-launcher"]
+steampoacher_enabled = true
+
+[plugin_settings."noctalia/bitwarden"]
+vault_timeout = "30"
+
 [plugins]
 enabled = [
     "oldirtty/color_picker",
@@ -256,7 +448,10 @@ enabled = [
     "frai3mega/battery-graph",
     "blackbartblues/audio-switcher",
     "yugaaank/better-clock",
-    "tmelik/system-monitor"
+    "tmelik/system-monitor",
+    "decksters-lab/palette-creator",
+    "yocraft/web-launcher",
+    "alexander/game-launcher"
 ]
 
 [shell]
@@ -264,12 +459,20 @@ app_icon_color = "secondary"
 avatar_path = "/home/stephenk/Pictures/PFPs/ScreamingSUN.jpg"
 corner_radius_scale = 1.4000000208616257
 font_family = "JetBrains Mono Medium"
+panel_anchor_bar = "default"
+settings_window_translucent = true
 
     [shell.launcher]
+    categories = false
+    compact = true
     pinned = [ "zen", "vesktop", "steam" ]
+    show_app_origin_indicator = false
 
     [shell.panel]
+    clipboard_placement = "attached"
+    launcher_placement = "attached"
     open_near_click_control_center = true
+    transparency_mode = "glass"
 
     [shell.screen_corners]
     size = 66
@@ -307,19 +510,23 @@ post_hook = "pkill -SIGUSR1 fish"
 
 [theme]
 builtin = "Catppuccin"
-community_palette = "Osaka jade"
+community_palette = "Everforest"
 custom_palette = "OuterWilds"
 mode = "dark"
 source = "custom"
-wallpaper_scheme = "m3-tonal-spot"
+wallpaper_scheme = "m3-fruit-salad"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt" ]
-    community_ids = [ "zen-browser", "discord", "gimp", "libreoffice", "neovim", "steam", "fastfetch", "lazygit", "yazi" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kitty", "niri", "qt" ]
+    community_ids = [ "zen-browser", "discord", "gimp", "libreoffice", "neovim", "steam", "lazygit", "yazi" ]
 
         [theme.templates.user.atuin]
         input_path = "~/.config/atuin/themes/template.toml"
         output_path = "~/.config/atuin/themes/noctalia.toml"
+
+        [theme.templates.user.cliamp]
+        input_path = "~/.config/cliamp/themes/noctaliaTemplate"
+        output_path = "~/.config/cliamp/themes/noctalia.toml"
 
         [theme.templates.user.fastfetch]
         input_path = "~/.config/fastfetch/configTemplate.jsonc"
@@ -328,6 +535,10 @@ wallpaper_scheme = "m3-tonal-spot"
         [theme.templates.user.oh_my_posh]
         input_path = "$XDG_CONFIG_HOME/oh-my-posh/noctalia-template.json"
         output_path = "$XDG_CONFIG_HOME/oh-my-posh/noctalia.json"
+
+        [theme.templates.user.palette_creator_live]
+        input_path = "/home/stephenk/.local/state/noctalia/plugins/materialized/community/palette-creator/templates/live-snapshot.tpl"
+        output_path = "/home/stephenk/.local/state/noctalia/plugin-data/kyle-palette-creator/live-snapshot.json"
 
 [wallpaper]
 directory = "/home/stephenk/Pictures/Wallpapers"
@@ -375,6 +586,17 @@ fill_color = "surface"
     path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
     theme_mode = "dark"
 
+[widget.ActiveName]
+type = "active_window"
+
+[widget.Date]
+format = "{:%a, %b %d, %Y}"
+type = "clock"
+
+[widget.Divider]
+text = "|"
+type = "text"
+
 [widget.GPU]
 custom_image = "/home/stephenk/Pictures/Icon/vga-card.png"
 custom_image_colorize = true
@@ -384,6 +606,10 @@ type = "sysmon"
 [widget.Storage]
 stat = "disk_used_pct"
 type = "sysmon"
+
+[widget.Title]
+hide_album_art = true
+type = "media"
 
 [widget.active_window]
 max_length = 140
@@ -404,13 +630,77 @@ type = "yuuto/calculator:bar"
 input_devices = [ "/dev/input/by-path/*-event-kbd", "/dev/input/by-path/*mouse" ]
 type = "noctalia/bongocat:cat"
 
+[widget.cat_10]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_11]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_12]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_13]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_14]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_15]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_16]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_17]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_18]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
 [widget.cat_2]
 input_devices = [ "/dev/input/by-path/*-event-*" ]
 type = "noctalia/bongocat:cat"
 
+[widget.cat_3]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_4]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_5]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_6]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_7]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_8]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_9]
+input_devices = [ "/dev/input/by-path/*-event-*" ]
+type = "noctalia/bongocat:cat"
+
 [widget.clock]
-anchor = true
-format = "{:%-I:%M %p | %a, %b %d, %Y}"
+anchor = false
+format = "{:%-I:%M %p}"
 
 [widget.control-center]
 glyph = "menu-2"
@@ -428,10 +718,15 @@ custom_image_colorize = true
 icon_color = "secondary"
 scale = 1.1500000000000001
 
+[widget.launcher_2]
+type = "alexander/game-launcher:launcher"
+
 [widget.media]
-art_size = 96
+album_art_only = true
+art_size = 18
 hide_when_no_media = true
-max_length = 141
+max_length = 183
+min_length = 90
 title_scroll = "on_hover"
 
 [widget.ram]
@@ -449,3 +744,9 @@ pinned = []
 
 [widget.widget]
 type = "oldirtty/color_picker:widget"
+
+[widget.widget_2]
+type = "blackbartblues/audio-switcher:widget"
+
+[widget.workspaces]
+style = "focus_hint"
