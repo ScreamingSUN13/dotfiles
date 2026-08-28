@@ -15,7 +15,7 @@ order = [ "default", "sideDefault" ]
     capsule_opacity = 0.48999998904764652
     capsule_padding = 7.0
     capsule_radius = 7
-    capsule_thickness = 0.82999998517334461
+    capsule_thickness = 0.70999998785555363
     center = [ "group:g7" ]
     color = "secondary"
     concave_edge_corners = false
@@ -32,6 +32,7 @@ order = [ "default", "sideDefault" ]
     radius_top_left = 10
     radius_top_right = 10
     start = [ "group:g8", "group:g4", "group:g5", "group:g9" ]
+    thickness = 36
 
         [[bar.default.capsule_group]]
         accordion = true
@@ -286,7 +287,7 @@ auto_locate = true
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@eDP-1" ]
+widget_order = [ "lockscreen-login-box@eDP-1" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -458,7 +459,7 @@ enabled = [
 app_icon_color = "secondary"
 avatar_path = "/home/stephenk/Pictures/PFPs/ScreamingSUN.jpg"
 corner_radius_scale = 1.4000000208616257
-font_family = "JetBrains Mono Medium"
+font_family = "JetBrains Mono"
 panel_anchor_bar = "default"
 settings_window_translucent = true
 
@@ -513,12 +514,12 @@ builtin = "Catppuccin"
 community_palette = "Everforest"
 custom_palette = "OuterWilds"
 mode = "dark"
-source = "custom"
-wallpaper_scheme = "m3-fruit-salad"
+source = "builtin"
+wallpaper_scheme = "soft"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kitty", "niri", "qt" ]
-    community_ids = [ "zen-browser", "discord", "gimp", "libreoffice", "neovim", "steam", "lazygit", "yazi" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt" ]
+    community_ids = [ "pywalfox", "zen-browser", "discord", "neovim", "steam", "lazygit", "yazi" ]
 
         [theme.templates.user.atuin]
         input_path = "~/.config/atuin/themes/template.toml"
@@ -545,10 +546,10 @@ directory = "/home/stephenk/Pictures/Wallpapers"
 fill_color = "surface"
 
     [wallpaper.default]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stonehill/Pictures/Wallpapers/Stonehill.png"
 
     [wallpaper.last]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stonehill/Pictures/Wallpapers/Stonehill.png"
 
     [wallpaper.monitor.eDP-1]
     fill_color = "surface"
@@ -566,7 +567,7 @@ fill_color = "surface"
     path = "/home/stephenk/Pictures/Wallpapers/OneShot.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stonehill/Pictures/Wallpapers/Stonehill.png"
 
     [[wallpaper.favorite]]
     custom_palette = "OuterWilds"
