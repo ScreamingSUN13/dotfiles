@@ -2,22 +2,22 @@
 -- MIT license, see LICENSE for more details.
 -- stylua: ignore
 local colors = {
-	primary			 = '#cba6f7',
-	secondary 	 = '#b4befe',
-	tertiary		 = '#89dceb',
-	eror         = '#f38ba8',
-	brightred    = '#f38ba8',
-  green		     = '#a6e3a1',
-	surface			 = '#202031',
-	surface_variant = '#313244',
-	on_primary   = '#202031',
-	on_secondary = '#202031',
-	on_tertiary  = '#202031',
-	on_eror  		 = '#202031',
-	on_brightred = '#bac2de',
-	on_green		 = '#47495d',
-	on_surface 	 = '#cdd6f4',
-	on_surface_variant = '#a6adc8'
+	primary			 = '#ef9b27',
+	secondary 	 = '#3cb371',
+	tertiary		 = '#39bae6',
+	eror         = '#d95757',
+	brightred    = '#d95757',
+  green		     = '#47cc68',
+	surface			 = '#1e222a',
+	surface_variant = '#0d1017',
+	on_primary   = '#0d1017',
+	on_secondary = '#0d1017',
+	on_tertiary  = '#0d1017',
+	on_eror  		 = '#0d1017',
+	on_brightred = '#d1d1c7',
+	on_green		 = '#0b0e14',
+	on_surface 	 = '#9198a0',
+	on_surface_variant = '#d1d1c7'
 }
 
 local M = {

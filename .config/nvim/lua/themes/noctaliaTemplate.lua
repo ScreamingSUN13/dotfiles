@@ -8,16 +8,16 @@ local colors = {
 	eror         = '{{colors.error.default.hex}}',
 	brightred    = '{{colors.terminal_normal_red.default.hex}}',
   green		     = '{{colors.terminal_normal_green.default.hex}}',
-	surface			 = '{{colors.surface.default.hex | lighten 1}}',
-	surface_variant = '{{colors.surface_variant.default.hex}}',
+	surface			 = '{{colors.surface_variant.default.hex}}',
+	surface_variant = '{{colors.surface.default.hex | lighten 1}}',
 	on_primary   = '{{colors.on_primary.default.hex | lighten 1}}',
 	on_secondary = '{{colors.on_secondary.default.hex | lighten 1}}',
 	on_tertiary  = '{{colors.on_tertiary.default.hex | lighten 1}}',
 	on_eror  		 = '{{colors.on_error.default.hex | lighten 1}}',
 	on_brightred = '{{colors.terminal_normal_white.default.hex}}',
-	on_green		 = '{{colors.terminal_normal_black.default.hex | lighten 1}}',
-	on_surface 	 = '{{colors.on_surface.default.hex}}',
-	on_surface_variant = '{{colors.on_surface_variant.default.hex}}'
+	on_green		 = '{{colors.terminal_normal_black.default.hex}}',
+	on_surface 	 = '{{colors.on_surface_variant.default.hex | lighten 1}}',
+	on_surface_variant = '{{colors.on_surface.default.hex}}'
 }
 
 local M = {
