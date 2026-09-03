@@ -42,7 +42,7 @@ local M = {
     c = { bg = colors.surface_variant, fg = colors.on_surface_variant },
   },
   command = {
-    a = { bg = colors.green, fg = colors.on_green, gui = 'bold' },
+    a = { bg = colors.green, fg = colors.on_secondary, gui = 'bold' },
     b = { bg = colors.surface, fg = colors.on_surface },
     c = { bg = colors.surface_variant, fg = colors.on_surface_variant },
   },
