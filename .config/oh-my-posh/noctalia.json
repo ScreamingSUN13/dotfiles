@@ -15,8 +15,8 @@
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b0",
           "template": " {{.UserName}}@{{.HostName}} ",
-					"foreground": "#8e959e",
-          "background": "#1e222a",
+					"foreground": "#a79fb3",
+          "background": "#1a1625",
           "type": "session",
           "style": "diamond"
         },
@@ -35,7 +35,7 @@
           "template": " {{.HEAD}} ",
           "foreground": "#0b0e14",
           "powerline_symbol": "\ue0b0",
-          "background": "#39bae6",
+          "background": "#6c82c4",
           "type": "git",
           "style": "powerline"
         },

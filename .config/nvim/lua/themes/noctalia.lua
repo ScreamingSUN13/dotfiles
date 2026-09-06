@@ -4,20 +4,20 @@
 local colors = {
 	primary			 = '#ef9b27',
 	secondary 	 = '#3cb371',
-	tertiary		 = '#39bae6',
+	tertiary		 = '#6c82c4',
 	eror         = '#d95757',
-	brightred    = '#d95757',
-  green		     = '#47cc68',
-	surface			 = '#1e222a',
-	surface_variant = '#0d1017',
+	brightred    = '#e95678',
+  green		     = '#29d398',
+	surface			 = '#1a1625',
+	surface_variant = '#09111b',
 	on_primary   = '#0d1017',
 	on_secondary = '#0d1017',
 	on_tertiary  = '#0d1017',
 	on_eror  		 = '#0d1017',
-	on_brightred = '#d1d1c7',
-	on_green		 = '#0b0e14',
-	on_surface 	 = '#9198a0',
-	on_surface_variant = '#d1d1c7'
+	on_brightred = '#fadad1',
+	on_green		 = '#16161c',
+	on_surface 	 = '#aaa2b5',
+	on_surface_variant = '#e8e2d9'
 }
 
 local M = {
@@ -42,7 +42,7 @@ local M = {
     c = { bg = colors.surface_variant, fg = colors.on_surface_variant },
   },
   command = {
-    a = { bg = colors.green, fg = colors.on_green, gui = 'bold' },
+    a = { bg = colors.green, fg = colors.on_secondary, gui = 'bold' },
     b = { bg = colors.surface, fg = colors.on_surface },
     c = { bg = colors.surface_variant, fg = colors.on_surface_variant },
   },

@@ -213,14 +213,12 @@ order = [ "default", "sideDefault" ]
 
 [calendar]
 enabled = true
+event_time_format = "{:%-I:%M %p}"
 
     [calendar.account.personal_google]
     color = "primary"
     name = "Main"
     type = "google"
-
-[control_center.calendar]
-event_time_format = "{:%-I:%M %p}"
 
 [[control_center.shortcuts]]
 type = "wifi"
@@ -472,34 +470,6 @@ settings_window_translucent = true
     [shell.shadow]
     direction = "down_right"
 
-[templates.atuin]
-input_path = "~/.config/atuin/themes/template.toml"
-output_path = "~/.config/atuin/themes/noctalia.toml"
-
-[templates.background]
-input_path = "~/.config/niri/configTemplate.kdl"
-output_path = "~/.config/niri/config.kdl"
-post_hook = "niri msg action reload-config"
-
-[templates.fastfetch]
-input_path = "~/.config/fastfetch/configTemplate.jsonc"
-output_path = "~/.config/fastfetch/config.jsonc"
-
-[templates.niri]
-input_path = "~/.config/noctalia/templates/niri.kdl"
-output_path = "~/.config/niri/colors.kdl"
-post_hook = "niri msg action reload-config"
-
-[templates.nvim-base16]
-input_path = "~/.config/nvim/lua/matugen-template.lua"
-output_path = "~/.config/nvim/lua/matugen.lua"
-post_hook = "pkill -SIGUSR1 nvim"
-
-[templates.ohmyposh]
-input_path = "~/.config/oh-my-posh/noctalia-template.json"
-output_path = "~/.config/oh-my-posh/noctalia.json"
-post_hook = "pkill -SIGUSR1 fish"
-
 [theme]
 builtin = "Ayu"
 community_palette = "Ayu Red"
@@ -724,9 +694,6 @@ hide_when_no_media = true
 max_length = 183
 min_length = 90
 title_scroll = "on_hover"
-
-[widget.mpvpaper]
-type = "noctalia/mpvpaper:mpvpaper"
 
 [widget.ram]
 custom_image = "/home/stephenk/Pictures/Icon/ram.png"
