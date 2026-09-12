@@ -6,8 +6,6 @@
 // Noctalia syncing
 include "~/.config/niri/colors.kdl"
 
-lol
-
 // Custom rules
 window-rule {
     default-column-width { proportion 1.0; }

@@ -7,24 +7,26 @@ tint_intensity = 0.29999999999999999
 order = [ "default", "sideDefault" ]
 
     [bar.default]
-    background_opacity = 0.7799999825656414
-    border = "primary"
+    background_opacity = 0.4999999888241291
+    border = "outline"
+    border_width = 0.5
     capsule = true
-    capsule_border = "primary"
-    capsule_fill = "on_primary"
+    capsule_border = "outline"
+    capsule_fill = "surface_variant"
     capsule_opacity = 0.48999998904764652
     capsule_padding = 7.0
     capsule_radius = 7
-    capsule_thickness = 0.82999998517334461
+    capsule_thickness = 0.60999999009072781
     center = [ "group:g7" ]
     color = "secondary"
     concave_edge_corners = false
     contact_shadow = true
-    end = [ "group:g1", "group:g3", "group:g6", "notifications", "group:g2", "session" ]
-    font_family = "JetBrains Mono"
-    font_weight = 600
+    end = [ "group:g1", "group:g3", "group:g6", "notifications", "group:g2", "group:g10" ]
+    font_family = "OUTERwilds Normal"
+    font_scale = 1.1499999817460775
+    font_weight = 400
     icon_color = "primary"
-    margin_edge = 10
+    margin_edge = 5
     margin_ends = 20
     radius = 43
     radius_bottom_left = 10
@@ -32,7 +34,40 @@ order = [ "default", "sideDefault" ]
     radius_top_left = 10
     radius_top_right = 10
     start = [ "group:g8", "group:g4", "group:g5", "group:g9" ]
-    thickness = 36
+    thickness = 50
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "outline"
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "control-center", "brightness", "Divider", "bar", "clipboard", "mpvpaper", "widget", "tray" ]
+        opacity = 0.75
+        padding = 6.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "outline"
+        enabled = true
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "battery", "cpu", "GPU", "ram", "Storage" ]
+        opacity = 0.75
+        padding = 6.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "outline"
+        enabled = true
+        fill = "surface_variant"
+        id = "g3"
+        members = [ "volume", "widget_2", "input_volume" ]
+        opacity = 0.75
+        padding = 6.0
 
         [[bar.default.capsule_group]]
         accordion = true
@@ -53,8 +88,9 @@ order = [ "default", "sideDefault" ]
         fill = "on_primary"
         id = "g1"
         members = [ "battery", "cpu", "GPU", "ram", "Storage" ]
-        opacity = 0.80000001192092896
+        opacity = 0.77999997138977051
         padding = 6.0
+        radius = 9.0
 
         [[bar.default.capsule_group]]
         accordion = true
@@ -69,100 +105,65 @@ order = [ "default", "sideDefault" ]
 
         [[bar.default.capsule_group]]
         accordion = true
-        accordion_direction = "start"
-        border = "primary"
-        enabled = true
-        fill = "on_primary"
-        id = "g2"
-        members = [ "custom_button_2", "tray", "bar", "clipboard", "widget" ]
-        opacity = 0.77999997138977051
-        padding = 6.0
-        radius = 9.0
-
-        [[bar.default.capsule_group]]
-        accordion = true
-        accordion_direction = "start"
-        border = "primary"
-        enabled = true
-        fill = "on_primary"
-        id = "g1"
-        members = [ "battery", "cpu", "GPU", "ram", "Storage" ]
-        opacity = 0.77999997138977051
-        padding = 6.0
-        radius = 9.0
-
-        [[bar.default.capsule_group]]
-        accordion = true
-        accordion_direction = "start"
-        border = "primary"
-        enabled = true
-        fill = "on_primary"
-        id = "g3"
-        members = [ "volume", "input_volume" ]
-        opacity = 0.77999997138977051
-        padding = 6.0
-
-        [[bar.default.capsule_group]]
-        accordion = true
         accordion_direction = "end"
-        border = "primary"
+        border = "outline"
         enabled = true
-        fill = "on_primary"
+        fill = "surface_variant"
         id = "g4"
         members = [ "media", "Title" ]
-        opacity = 0.48999997973442078
+        opacity = 0.75
         padding = 7.0
 
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "end"
-        border = "primary"
+        border = "outline"
         enabled = true
-        fill = "on_primary"
+        fill = "surface_variant"
         id = "g5"
         members = [ "workspaces", "ActiveName" ]
-        opacity = 0.48999997973442078
+        opacity = 0.75
         padding = 7.0
 
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "start"
-        border = "primary"
+        border = "outline"
         enabled = true
-        fill = "on_primary"
+        fill = "surface_variant"
         id = "g6"
         members = [ "network", "network_tx", "network_rx" ]
-        opacity = 0.48999997973442078
+        opacity = 0.75
         padding = 7.0
 
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "end"
-        border = "primary"
+        border = "outline"
         enabled = true
-        fill = "on_primary"
+        fill = "surface_variant"
         id = "g7"
         members = [ "clock", "Divider", "Date" ]
-        opacity = 0.48999997973442078
+        opacity = 0.75
         padding = 7.0
 
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "end"
-        border = "primary"
+        border = "outline"
         enabled = true
-        fill = "on_primary"
+        fill = "surface_variant"
         id = "g8"
         members = [ "launcher", "launcher_2" ]
-        opacity = 0.48999997973442078
+        opacity = 0.75
         padding = 7.0
 
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "end"
-        border = "primary"
+        border = "outline"
         enabled = true
-        fill = "on_primary"
+        fill = "surface_variant"
         id = "g9"
         members = [
             "cat_2",
@@ -183,8 +184,20 @@ order = [ "default", "sideDefault" ]
             "cat_17",
             "cat_18"
         ]
-        opacity = 0.48999997973442078
+        opacity = 0.69999998807907104
         padding = 7.0
+
+        [[bar.default.capsule_group]]
+        accordion = true
+        accordion_direction = "start"
+        border = "outline"
+        enabled = true
+        fill = "surface_variant"
+        id = "g10"
+        members = [ "session", "nextboot-selector" ]
+        opacity = 0.75
+        padding = 7.0
+        radius = 7.0
 
     [bar.sideDefault]
     background_opacity = 0.3899999912828207
@@ -219,6 +232,8 @@ event_time_format = "{:%-I:%M %p}"
     color = "primary"
     name = "Main"
     type = "google"
+
+[control_center.calendar]
 
 [[control_center.shortcuts]]
 type = "wifi"
@@ -276,7 +291,7 @@ auto_locate = true
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@eDP-1" ]
+widget_order = [ "lockscreen-login-box@DP-4", "lockscreen-login-box@DP-2", "lockscreen-login-box@eDP-1" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -345,6 +360,33 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@eDP-1" ]
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-4"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 800.0
+    cy = 718.0
+    output = "DP-4"
+    placement_height = 900.0
+    placement_width = 1600.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-4".settings]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
@@ -441,14 +483,16 @@ enabled = [
     "tmelik/system-monitor",
     "decksters-lab/palette-creator",
     "yocraft/web-launcher",
-    "alexander/game-launcher"
+    "alexander/game-launcher",
+    "liamwh/emoji-picker",
+    "avivbintangaringga/nextboot-selector"
 ]
 
 [shell]
 app_icon_color = "secondary"
 avatar_path = "/home/stephenk/Pictures/PFPs/ScreamingSUN.jpg"
 corner_radius_scale = 1.4000000208616257
-font_family = "JetBrains Mono Medium"
+font_family = "JetBrains Mono"
 panel_anchor_bar = "default"
 settings_window_translucent = true
 
@@ -479,8 +523,8 @@ source = "custom"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kitty", "niri", "qt" ]
-    community_ids = [ "zen-browser", "discord", "gimp", "libreoffice", "neovim", "steam", "lazygit", "yazi" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "niri", "qt" ]
+    community_ids = [ "zen-browser", "discord", "gimp", "libreoffice", "neovim", "steam", "fzf", "lazygit", "tmux", "yazi" ]
 
         [theme.templates.user.atuin]
         input_path = "~/.config/atuin/themes/template.toml"
@@ -553,6 +597,7 @@ fill_color = "surface"
     theme_mode = "dark"
 
 [widget.ActiveName]
+max_length = 435
 type = "active_window"
 
 [widget.Date]
@@ -560,6 +605,8 @@ format = "{:%a, %b %d, %Y}"
 type = "clock"
 
 [widget.Divider]
+color = "primary"
+font_scale = 1.5
 text = "|"
 type = "text"
 
@@ -575,6 +622,7 @@ type = "sysmon"
 
 [widget.Title]
 hide_album_art = true
+max_length = 435
 type = "media"
 
 [widget.active_window]
@@ -694,6 +742,9 @@ hide_when_no_media = true
 max_length = 183
 min_length = 90
 title_scroll = "on_hover"
+
+[widget.nextboot-selector]
+type = "avivbintangaringga/nextboot-selector:nextboot-selector"
 
 [widget.ram]
 custom_image = "/home/stephenk/Pictures/Icon/ram.png"
