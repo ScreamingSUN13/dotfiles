@@ -34,3 +34,7 @@ output_path = "~/.config/cliamp/themes/noctalia.toml"
 [theme.templates.user.lualine]
 input_path = "~/.config/nvim/lua/themes/noctaliaTemplate.lua"
 output_path = "~/.config/nvim/lua/themes/noctalia.lua"
+
+[theme.templates.user.smearcursor]
+input_path = "~/.config/noctalia/templates/smearCursorTemplate.lua"
+output_path = "~/.config/nvim/lua/plugins/smear-cursor.lua"
