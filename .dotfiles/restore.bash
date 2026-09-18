@@ -8,6 +8,7 @@ function config {
 config checkout --force
 config config status.showUntrackedFiles no
 
+## Download major packages
 sudo pacman -S --needed \
 	yay \
 	flatpak \
@@ -25,8 +26,19 @@ sudo pacman -S --needed \
 	noctalia \
 	sddm \
 	libreoffice \
-  dolphin
+  dolphin \
+	git \
+	lazygit \
+	qt6ct \
+	qt5ct \
+	os-prober \
+	okular \
+	pastel \
+	gwenview \
+	ttf-jetbrains-mono \
+	mpv
 
 yay -S --needed \
 	oh-my-posh \
+	sddm-silent-theme \
 	cliamp
