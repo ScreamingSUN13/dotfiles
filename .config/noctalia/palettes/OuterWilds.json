@@ -24,14 +24,14 @@
 			"selectionBg": "#3D3450",
 			"selectionFg": "#E8E2D9",
 			"normal": {
-				"black": "#16161C",
-				"red": "#E95678",
-				"green": "#29D398",
-				"yellow": "#FAB795",
-				"blue": "#26BBD9",
-				"magenta": "#EE64AE",
-				"cyan": "#59E3E3",
-				"white": "#FADAD1"
+				"black": "#282A36",
+				"red": "#FF5555",
+				"green": "#50FA7B",
+				"yellow": "#F1FA8C",
+				"blue": "#BD93F9",
+				"magenta": "#FF79C6",
+				"cyan": "#8BE9FD",
+				"white": "#F8F8F2"
 			},
 			"bright": {
 				"black": "#232530",
