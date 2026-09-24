@@ -17,8 +17,12 @@ window-rule {
 }
 
 window-rule {
-    match app-id="zen"
-    draw-border-with-background false
+	match app-id="zen"
+	draw-border-with-background false
+	opacity 0.90
+	background-effect {
+		blur true
+	}
 }
 
 window-rule {
