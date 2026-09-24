@@ -488,8 +488,9 @@ binds {
     Mod+Space hotkey-overlay-title="Run an Application: noctalia" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
-		// Settings
+		// Noctalia
 		Mod+S { spawn-sh "noctalia msg settings-toggle"; }
+		Mod+C { spawn-sh "noctalia msg panel-toggle control-center"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
@@ -700,7 +701,6 @@ binds {
     // Makes the column "fill the rest of the space".
     Mod+Ctrl+F { expand-column-to-available-width; }
 
-    Mod+C { center-column; }
 
     // Center all fully visible columns on screen.
     Mod+Ctrl+C { center-visible-columns; }

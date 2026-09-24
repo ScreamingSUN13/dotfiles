@@ -43,7 +43,7 @@ order = [ "default", "sideDefault" ]
         enabled = true
         fill = "surface_variant"
         id = "g2"
-        members = [ "control-center", "brightness", "Divider", "bar", "clipboard", "mpvpaper", "widget", "tray" ]
+        members = [ "control-center", "brightness", "Divider", "bar", "clipboard", "widget_3", "mpvpaper", "widget", "tray" ]
         opacity = 0.75
         padding = 6.0
 
@@ -224,6 +224,9 @@ order = [ "default", "sideDefault" ]
     radius_top_right = 0
     start = [ "launcher", "workspaces", "media" ]
 
+[brightness]
+sync_all_monitors = true
+
 [calendar]
 enabled = true
 event_time_format = "{:%-I:%M %p}"
@@ -233,25 +236,29 @@ event_time_format = "{:%-I:%M %p}"
     name = "Main"
     type = "google"
 
-[control_center.calendar]
+[control_center]
+sidebar = "full"
+width = 800
 
-[[control_center.shortcuts]]
-type = "wifi"
+    [control_center.calendar]
 
-[[control_center.shortcuts]]
-type = "bluetooth"
+    [[control_center.shortcuts]]
+    type = "wifi"
 
-[[control_center.shortcuts]]
-type = "caffeine"
+    [[control_center.shortcuts]]
+    type = "bluetooth"
 
-[[control_center.shortcuts]]
-type = "nightlight"
+    [[control_center.shortcuts]]
+    type = "caffeine"
 
-[[control_center.shortcuts]]
-type = "clipboard"
+    [[control_center.shortcuts]]
+    type = "nightlight"
 
-[[control_center.shortcuts]]
-type = "power_profile"
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+    [[control_center.shortcuts]]
+    type = "decksters-lab/palette-creator:cc_toggle"
 
 [desktop_widgets]
 schema_version = 2
@@ -291,7 +298,12 @@ auto_locate = true
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DP-4", "lockscreen-login-box@DP-2", "lockscreen-login-box@eDP-1" ]
+widget_order = [
+    "lockscreen-login-box@DP-1",
+    "lockscreen-login-box@DP-4",
+    "lockscreen-login-box@DP-2",
+    "lockscreen-login-box@eDP-1"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -304,6 +316,8 @@ widget_order = [ "lockscreen-login-box@DP-4", "lockscreen-login-box@DP-2", "lock
     cx = 960.0
     cy = 898.0
     output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -329,8 +343,8 @@ widget_order = [ "lockscreen-login-box@DP-4", "lockscreen-login-box@DP-2", "lock
     cx = 960.0
     cy = 898.0
     output = "DP-2"
-    placement_height = 0.0
-    placement_width = 0.0
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -494,7 +508,10 @@ avatar_path = "/home/stephenk/Pictures/PFPs/ScreamingSUN.jpg"
 corner_radius_scale = 1.4000000208616257
 font_family = "JetBrains Mono"
 panel_anchor_bar = "default"
+polkit_agent = true
+screen_time_enabled = true
 settings_window_translucent = true
+time_format = "{:%I:%M %p}"
 
     [shell.launcher]
     categories = false
@@ -504,6 +521,8 @@ settings_window_translucent = true
 
     [shell.panel]
     clipboard_placement = "attached"
+    control_center_placement = "floating"
+    control_center_position = "center"
     launcher_placement = "attached"
     open_near_click_control_center = true
     transparency_mode = "glass"
@@ -516,11 +535,11 @@ settings_window_translucent = true
 
 [theme]
 builtin = "Ayu"
-community_palette = "Ayu Red"
+community_palette = "ADW"
 custom_palette = "OuterWilds"
 mode = "dark"
 source = "custom"
-wallpaper_scheme = "m3-tonal-spot"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "niri", "qt" ]
@@ -559,10 +578,10 @@ directory = "/home/stephenk/Pictures/Wallpapers"
 fill_color = "surface"
 
     [wallpaper.default]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSolarSystem.png"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [wallpaper.last]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSolarSystem.png"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [wallpaper.monitor.eDP-1]
     fill_color = "surface"
@@ -580,7 +599,7 @@ fill_color = "surface"
     path = "/home/stephenk/Pictures/Wallpapers/OneShot.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSolarSystem.png"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [[wallpaper.favorite]]
     custom_palette = "OuterWilds"
@@ -595,8 +614,61 @@ fill_color = "surface"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/Niko.jpeg"
+    theme_mode = "dark"
+    wallpaper_scheme = "soft"
+
+    [[wallpaper.favorite]]
+    custom_palette = "OuterWilds"
+    palette_source = "custom"
     path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
-    theme_mode = "auto"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/Owlek.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "soft"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/TimberHearth.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "vibrant"
+
+    [[wallpaper.favorite]]
+    custom_palette = "OuterWilds"
+    palette_source = "custom"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsStargazing.jpeg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/OneShot.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "soft"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/NewUniverse2.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/EndTimes.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "soft"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/ClairObscur.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-tonal-spot"
+
+[weather]
+unit = "imperial"
 
 [widget.ActiveName]
 max_length = 435
@@ -766,6 +838,9 @@ type = "oldirtty/color_picker:widget"
 
 [widget.widget_2]
 type = "blackbartblues/audio-switcher:widget"
+
+[widget.widget_3]
+type = "blackbartblues/keymap:widget"
 
 [widget.workspaces]
 style = "focus_hint"
