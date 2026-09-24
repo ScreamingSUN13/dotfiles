@@ -8,16 +8,7 @@ include "~/.config/niri/colors.kdl"
 
 // Custom rules
 window-rule {
-    default-column-width { proportion 1.0; }
-}
-
-window-rule {
-    match app-id="kitty"
-    draw-border-with-background false
-}
-
-window-rule {
-	match app-id="zen"
+	default-column-width { proportion 1.0; }
 	draw-border-with-background false
 	opacity 0.90
 	background-effect {
@@ -26,11 +17,14 @@ window-rule {
 }
 
 window-rule {
-	match app-id="dev.noctalia.Noctalia"
+	match app-id="kitty"
 	draw-border-with-background false
-	background-effect {
-		blur true
-	}
+	opacity 1.00
+}
+
+window-rule {
+	match app-id="dev.noctalia.Noctalia"
+	opacity 1.00
 }
 
 

@@ -33,6 +33,7 @@ application/zip=org.kde.dolphin.desktop
 application/x-tar=org.kde.dolphin.desktop
 application/x-7z-compressed=org.kde.dolphin.desktop
 text/plain=nvim.desktop
+text/css=nvim.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;userapp-Zen-QIY6V3.desktop;
@@ -45,3 +46,4 @@ application/x-extension-shtml=userapp-Zen-QIY6V3.desktop;zen.desktop;
 application/xhtml+xml=userapp-Zen-QIY6V3.desktop;zen.desktop;
 application/x-extension-xhtml=userapp-Zen-QIY6V3.desktop;zen.desktop;
 application/x-extension-xht=userapp-Zen-QIY6V3.desktop;zen.desktop;
+text/css=nvim.desktop;
