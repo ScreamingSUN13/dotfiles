@@ -40,6 +40,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "start"
         border = "outline"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g2"
@@ -51,6 +52,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "start"
         border = "outline"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g1"
@@ -62,6 +64,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "start"
         border = "outline"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g3"
@@ -73,6 +76,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "start"
         border = "primary"
+        border_width = 1.0
         enabled = true
         fill = "on_primary"
         id = "g2"
@@ -84,6 +88,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "start"
         border = "primary"
+        border_width = 1.0
         enabled = true
         fill = "on_primary"
         id = "g1"
@@ -96,6 +101,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "start"
         border = "primary"
+        border_width = 1.0
         enabled = true
         fill = "on_primary"
         id = "g3"
@@ -107,6 +113,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "end"
         border = "outline"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g4"
@@ -118,6 +125,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "end"
         border = "outline"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g5"
@@ -129,10 +137,11 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "start"
         border = "outline"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g6"
-        members = [ "network", "network_tx", "network_rx" ]
+        members = [ "network", "network_rx", "network_tx" ]
         opacity = 0.75
         padding = 7.0
 
@@ -140,6 +149,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "end"
         border = "outline"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g7"
@@ -151,6 +161,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "end"
         border = "outline"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g8"
@@ -162,6 +173,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "end"
         border = "outline"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g9"
@@ -191,6 +203,7 @@ order = [ "default", "sideDefault" ]
         accordion = true
         accordion_direction = "start"
         border = "outline"
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g10"
@@ -499,7 +512,9 @@ enabled = [
     "yocraft/web-launcher",
     "alexander/game-launcher",
     "liamwh/emoji-picker",
-    "avivbintangaringga/nextboot-selector"
+    "avivbintangaringga/nextboot-selector",
+    "whyoolw/dropwall",
+    "nomadcxx/gslapper"
 ]
 
 [shell]
@@ -539,7 +554,7 @@ community_palette = "ADW"
 custom_palette = "OuterWilds"
 mode = "dark"
 source = "custom"
-wallpaper_scheme = "m3-content"
+wallpaper_scheme = "m3-monochrome"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "niri", "qt" ]
@@ -608,10 +623,10 @@ fill_color = "surface"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
-    custom_palette = "OuterWilds"
-    palette_source = "custom"
+    palette_source = "wallpaper"
     path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
     theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
@@ -651,12 +666,6 @@ fill_color = "surface"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "/home/stephenk/Pictures/Wallpapers/NewUniverse2.jpg"
-    theme_mode = "dark"
-    wallpaper_scheme = "m3-fruit-salad"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
     path = "/home/stephenk/Pictures/Wallpapers/EndTimes.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "soft"
@@ -666,6 +675,138 @@ fill_color = "surface"
     path = "/home/stephenk/Pictures/Wallpapers/ClairObscur.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-tonal-spot"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/NewUniverse.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/vinlandSaga.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "muted"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/toBeHeroX.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/starWars2.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-tonal-spot"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/starWars1.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-tonal-spot"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/mobPsycho100.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "faithful"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/minecraft.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/kaijuNo8.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/jujutsuKaisen.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/gachiakuta.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/demonSlayer.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-monochrome"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/cyberpunkEdgerunners.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-rainbow"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/chainsawMan.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/fullMetalAlchemist.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "vibrant"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/dragonBall.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-tonal-spot"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/drStone.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "dysfunctional"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/jojo.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "muted"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/alita.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/attackOnTitan.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-monochrome"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/bleach.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-monochrome"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/deathNote.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-rainbow"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/onePiece.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-monochrome"
 
 [weather]
 unit = "imperial"
