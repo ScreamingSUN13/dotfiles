@@ -18,17 +18,17 @@ order = [ "default", "sideDefault" ]
 
     [bar.default]
     auto_hide = false
-    background_opacity = 0.5
+    background_opacity = 0.4999999888241291
     border = "outline"
     border_width = 0.5
     capsule = true
     capsule_border = "outline"
     capsule_border_width = 1.0
     capsule_fill = "surface_variant"
-    capsule_opacity = 0.75
+    capsule_opacity = 0.74999998323619366
     capsule_padding = 7.0
     capsule_radius = 7.0
-    capsule_thickness = 0.61000001430511475
+    capsule_thickness = 0.60999999009072781
     center = [ "group:g7" ]
     color = "secondary"
     compositor_blur = true
@@ -37,7 +37,7 @@ order = [ "default", "sideDefault" ]
     enabled = true
     end = [ "group:g1", "group:g3", "group:g6", "notifications", "group:g2", "group:g10" ]
     font_family = "OUTERwilds Normal"
-    font_scale = 1.1499999761581421
+    font_scale = 1.1499999817460775
     font_weight = 400
     hover_highlight = true
     icon_color = "primary"
@@ -355,11 +355,14 @@ width = 800
 [desktop_widgets]
 enabled = true
 schema_version = 2
+widget_order = []
 
     [desktop_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
+
+    [desktop_widgets.widget]
 
 [dock]
 active_monitor_only = false
@@ -686,7 +689,7 @@ show_app_name = true
 width = 360
 
 [osd]
-background_opacity = 0.79999995231628418
+background_opacity = 0.79999998211860657
 border = true
 border_color = "outline"
 border_width = 1.0
@@ -767,7 +770,7 @@ clipboard_enabled = true
 clipboard_history_max_entries = 100
 clipboard_image_action_command = ""
 clipboard_keep_from_closed_apps = true
-corner_radius_scale = 1.3999999761581421
+corner_radius_scale = 1.4000000208616257
 date_format = "%A, %x"
 disable_mipmaps = false
 external_ip_enabled = false
@@ -821,6 +824,9 @@ umbriel_overview_type_to_launch_enabled = false
         [shell.launcher.panels]
         ignored = [ "polkit", "setup-wizard", "test", "launcher" ]
 
+        [shell.launcher.providers.windows]
+        global = true
+
     [shell.mpris]
     blacklist = []
 
@@ -832,7 +838,7 @@ umbriel_overview_type_to_launch_enabled = false
     control_center_position = "center"
     floating_layer = "overlay"
     floating_offset = 8
-    launcher_placement = "attached"
+    launcher_placement = "floating"
     launcher_position = "center"
     list_item_background = false
     open_near_click_clipboard = false
@@ -1007,7 +1013,7 @@ wallpaper_scheme = "m3-content"
         hook_async = true
         index = 0
         input_path = "~/.config/atuin/themes/template.toml"
-        output_path = [ "~/.config/atuin/themes/noctalia.toml" ]
+        output_path = "~/.config/atuin/themes/noctalia.toml"
         output_path_dynamic = ""
         post_action = ""
         post_hook = ""
@@ -1019,7 +1025,7 @@ wallpaper_scheme = "m3-content"
         hook_async = true
         index = 0
         input_path = "~/.config/cliamp/themes/noctaliaTemplate"
-        output_path = [ "~/.config/cliamp/themes/noctalia.toml" ]
+        output_path = "~/.config/cliamp/themes/noctalia.toml"
         output_path_dynamic = ""
         post_action = ""
         post_hook = ""
@@ -1031,7 +1037,7 @@ wallpaper_scheme = "m3-content"
         hook_async = true
         index = 0
         input_path = "~/.config/fastfetch/configTemplate.jsonc"
-        output_path = [ "~/.config/fastfetch/config.jsonc" ]
+        output_path = "~/.config/fastfetch/config.jsonc"
         output_path_dynamic = ""
         post_action = ""
         post_hook = ""
@@ -1043,7 +1049,7 @@ wallpaper_scheme = "m3-content"
         hook_async = true
         index = 0
         input_path = "~/.config/nvim/lua/themes/noctaliaTemplate.lua"
-        output_path = [ "~/.config/nvim/lua/themes/noctalia.lua" ]
+        output_path = "~/.config/nvim/lua/themes/noctalia.lua"
         output_path_dynamic = ""
         post_action = ""
         post_hook = ""
@@ -1055,7 +1061,7 @@ wallpaper_scheme = "m3-content"
         hook_async = true
         index = 0
         input_path = "$XDG_CONFIG_HOME/oh-my-posh/noctalia-template.json"
-        output_path = [ "$XDG_CONFIG_HOME/oh-my-posh/noctalia.json" ]
+        output_path = "$XDG_CONFIG_HOME/oh-my-posh/noctalia.json"
         output_path_dynamic = ""
         post_action = ""
         post_hook = ""
@@ -1067,7 +1073,7 @@ wallpaper_scheme = "m3-content"
         hook_async = true
         index = 0
         input_path = "/home/stephenk/.local/state/noctalia/plugins/materialized/community/palette-creator/templates/live-snapshot.tpl"
-        output_path = [ "/home/stephenk/.local/state/noctalia/plugin-data/kyle-palette-creator/live-snapshot.json" ]
+        output_path = "/home/stephenk/.local/state/noctalia/plugin-data/kyle-palette-creator/live-snapshot.json"
         output_path_dynamic = ""
         post_action = ""
         post_hook = ""
@@ -1079,7 +1085,7 @@ wallpaper_scheme = "m3-content"
         hook_async = true
         index = 0
         input_path = "~/.config/noctalia/templates/smearCursorTemplate.lua"
-        output_path = [ "~/.config/nvim/lua/plugins/smear-cursor.lua" ]
+        output_path = "~/.config/nvim/lua/plugins/smear-cursor.lua"
         output_path_dynamic = ""
         post_action = ""
         post_hook = ""
@@ -1104,9 +1110,234 @@ transition_on_startup = false
     order = "random"
     recursive = false
 
+    [wallpaper.default]
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+
+    [wallpaper.last]
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+
     [wallpaper.monitor.eDP-1]
     fill_color = "surface"
     match = "eDP-1"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+
+    [[wallpaper.favorite]]
+    custom_palette = "OuterWilds"
+    palette_source = "custom"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSolarSystem.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/Niko.jpeg"
+    theme_mode = "dark"
+    wallpaper_scheme = "soft"
+
+    [[wallpaper.favorite]]
+    custom_palette = "OuterWilds"
+    palette_source = "custom"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/Owlek.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "soft"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/TimberHearth.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "vibrant"
+
+    [[wallpaper.favorite]]
+    custom_palette = "OuterWilds"
+    palette_source = "custom"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsStargazing.jpeg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/OneShot.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "soft"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/EndTimes.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "soft"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/ClairObscur.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-tonal-spot"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/NewUniverse.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/kaijuNo8.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/jujutsuKaisen.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/demonSlayer.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-monochrome"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/drStone.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "dysfunctional"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/jojo.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "muted"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/attackOnTitan.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-monochrome"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/bleach.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-monochrome"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/deathNote.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-rainbow"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/onePiece.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-monochrome"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/projectHailMary.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-rainbow"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/alita.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/cyberpunkEdgerunners.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-rainbow"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/dragonBall.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-tonal-spot"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/fullMetalAlchemist.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "vibrant"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/minecraft.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/mobPsycho100.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "faithful"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/starWars1.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-tonal-spot"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/starWars2.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-tonal-spot"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/toBeHeroX.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/vinlandSaga.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "muted"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/haloReach.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "muted"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/friren.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    community_palette = "Ayu Red"
+    palette_source = "community"
+    path = "/home/stephenk/Pictures/Wallpapers/gachiakuta.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    community_palette = "Ayu Red"
+    palette_source = "community"
+    path = "/home/stephenk/Pictures/Wallpapers/toBeHeroX.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/chainsawMan.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
 
 [weather]
 effects = true
