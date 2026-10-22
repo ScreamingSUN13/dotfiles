@@ -998,8 +998,8 @@ custom_palette = "OuterWilds"
 mode = "dark"
 pure_black_dark = false
 shell_mode = "follow"
-source = "custom"
-wallpaper_scheme = "m3-tonal-spot"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "niri", "qt" ]
@@ -1111,17 +1111,17 @@ transition_on_startup = false
     recursive = false
 
     [wallpaper.default]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/naruto.jpg"
 
     [wallpaper.last]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/naruto.jpg"
 
     [wallpaper.monitor.eDP-1]
     fill_color = "surface"
     match = "eDP-1"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/naruto.jpg"
 
     [[wallpaper.favorite]]
     custom_palette = "OuterWilds"
@@ -1227,21 +1227,9 @@ transition_on_startup = false
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "/home/stephenk/Pictures/Wallpapers/bleach.png"
-    theme_mode = "dark"
-    wallpaper_scheme = "m3-monochrome"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
     path = "/home/stephenk/Pictures/Wallpapers/deathNote.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-rainbow"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "/home/stephenk/Pictures/Wallpapers/onePiece.png"
-    theme_mode = "dark"
-    wallpaper_scheme = "m3-monochrome"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
@@ -1486,6 +1474,30 @@ transition_on_startup = false
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
     path = "/home/stephenk/Pictures/Wallpapers/assassinationClassroom.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/mashle.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-tonal-spot"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/bleach.jpeg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/onePiece.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/naruto.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
