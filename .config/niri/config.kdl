@@ -489,6 +489,7 @@ binds {
 		// Noctalia
 		Mod+S { spawn-sh "noctalia msg settings-toggle"; }
 		Mod+C { spawn-sh "noctalia msg panel-toggle control-center"; }
+		Mod+L { spawn-sh "noctalia msg panel-toggle session"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
@@ -528,10 +529,6 @@ binds {
     Mod+Right { focus-column-right; }
     Mod+Down  { focus-workspace-down; }
     Mod+Up    { focus-workspace-up; }
-		Mod+H     { focus-column-left; }
-    Mod+J     { focus-window-down; }
-    Mod+K     { focus-window-up; }
-    Mod+L     { focus-column-right; }
 
     Mod+Alt+Left  { move-column-left; }
     Mod+Alt+Down  { move-window-down-or-to-workspace-down; }
