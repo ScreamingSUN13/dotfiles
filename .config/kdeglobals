@@ -32,7 +32,7 @@ ForegroundNegative=217,87,87
 ForegroundNeutral=108,130,196
 ForegroundNormal=232,226,217
 ForegroundPositive=108,130,196
-ForegroundVisited=217,242,228
+ForegroundVisited=64,183,116
 
 [Colors:Complementary]
 BackgroundAlternate=17,18,30
@@ -44,9 +44,9 @@ ForegroundInactive=167,159,179
 ForegroundLink=60,179,113
 ForegroundNegative=217,87,87
 ForegroundNeutral=108,130,196
-ForegroundNormal=251,233,208
+ForegroundNormal=239,155,39
 ForegroundPositive=108,130,196
-ForegroundVisited=217,242,228
+ForegroundVisited=64,183,116
 
 [Colors:Header]
 BackgroundAlternate=8,15,23
@@ -60,7 +60,7 @@ ForegroundNegative=217,87,87
 ForegroundNeutral=108,130,196
 ForegroundNormal=232,226,217
 ForegroundPositive=108,130,196
-ForegroundVisited=217,242,228
+ForegroundVisited=64,183,116
 
 [Colors:Header][Inactive]
 BackgroundAlternate=26,22,37
@@ -74,7 +74,7 @@ ForegroundNegative=217,87,87
 ForegroundNeutral=108,130,196
 ForegroundNormal=232,226,217
 ForegroundPositive=108,130,196
-ForegroundVisited=217,242,228
+ForegroundVisited=64,183,116
 
 [Colors:Selection]
 BackgroundAlternate=17,18,30
@@ -84,11 +84,11 @@ DecorationHover=239,155,39
 ForegroundActive=11,14,20
 ForegroundInactive=167,159,179
 ForegroundLink=60,179,113
-ForegroundNegative=106,20,20
-ForegroundNeutral=31,47,95
+ForegroundNegative=70,36,42
+ForegroundNeutral=38,49,74
 ForegroundNormal=11,14,20
-ForegroundPositive=31,47,95
-ForegroundVisited=217,242,228
+ForegroundPositive=38,49,74
+ForegroundVisited=64,183,116
 
 [Colors:Tooltip]
 BackgroundAlternate=8,15,23
@@ -102,12 +102,12 @@ ForegroundNegative=217,87,87
 ForegroundNeutral=108,130,196
 ForegroundNormal=232,226,217
 ForegroundPositive=108,130,196
-ForegroundVisited=217,242,228
+ForegroundVisited=64,183,116
 
 [Colors:View]
 BackgroundAlternate=26,22,37
 BackgroundNormal=8,15,23
-DecorationFocus=251,233,208
+DecorationFocus=239,155,39
 DecorationHover=11,14,20
 ForegroundActive=239,155,39
 ForegroundInactive=167,159,179
@@ -116,10 +116,10 @@ ForegroundNegative=217,87,87
 ForegroundNeutral=108,130,196
 ForegroundNormal=232,226,217
 ForegroundPositive=108,130,196
-ForegroundVisited=217,242,228
+ForegroundVisited=64,183,116
 
 [Colors:Window]
-BackgroundAlternate=94,57,6
+BackgroundAlternate=77,57,27
 BackgroundNormal=26,22,37
 DecorationFocus=239,155,39
 DecorationHover=239,155,39
@@ -130,12 +130,12 @@ ForegroundNegative=217,87,87
 ForegroundNeutral=108,130,196
 ForegroundNormal=232,226,217
 ForegroundPositive=108,130,196
-ForegroundVisited=217,242,228
+ForegroundVisited=64,183,116
 
 [General]
 AccentColor=25,172,132
 BrowserApplication=google-chrome.desktop
-ColorScheme=Noctalia
+ColorScheme=noctalia
 ColorSchemeHash=6d8d52469df94cc34e53504f564839b62461c506
 LastUsedCustomAccentColor=25,172,132
 Name=noctalia
@@ -179,9 +179,9 @@ MaximumRemoteSize=0
 SaveAs=
 
 [WM]
-activeBackground=94,57,6
-activeBlend=251,233,208
-activeForeground=251,233,208
+activeBackground=77,57,27
+activeBlend=239,155,39
+activeForeground=239,155,39
 inactiveBackground=8,15,23
 inactiveBlend=167,159,179
 inactiveForeground=167,159,179
