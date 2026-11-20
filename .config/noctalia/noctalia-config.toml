@@ -67,7 +67,7 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "start"
-        border = "outline"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
@@ -79,7 +79,7 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "start"
-        border = "outline"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
@@ -91,7 +91,7 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "start"
-        border = "outline"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
@@ -140,7 +140,7 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "end"
-        border = "outline"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
@@ -152,7 +152,7 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "end"
-        border = "outline"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
@@ -164,7 +164,7 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "start"
-        border = "outline"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
@@ -176,7 +176,7 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "end"
-        border = "outline"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
@@ -188,7 +188,7 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "end"
-        border = "outline"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
@@ -200,7 +200,7 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "end"
-        border = "outline"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
@@ -230,7 +230,7 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "start"
-        border = "outline"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
@@ -509,6 +509,7 @@ wallpaper = ""
 enabled = false
 schema_version = 2
 widget_order = [
+    "lockscreen-login-box@winit",
     "lockscreen-login-box@DP-3",
     "lockscreen-login-box@DP-1",
     "lockscreen-login-box@DP-4",
@@ -545,6 +546,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -573,6 +575,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -601,6 +604,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -608,12 +612,12 @@ widget_order = [
     [lockscreen_widgets.widget."lockscreen-login-box@DP-4"]
     box_height = 196.0
     box_width = 810.0
-    cx = 800.0
-    cy = 718.0
+    cx = 960.00006103515625
+    cy = 861.60003662109375
     enabled = true
     output = "DP-4"
-    placement_height = 900.0
-    placement_width = 1600.0
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -629,6 +633,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -657,6 +662,35 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@winit"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1384.0
+    cy = 1610.0
+    output = "winit"
+    placement_height = 1792.0
+    placement_width = 2768.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -760,8 +794,7 @@ enabled = [
 
 [shell]
 app_icon_color = "secondary"
-app_icon_colorize = false
-avatar_path = "~/Pictures/PFPs/ScreamingSUN.jpg"
+avatar_path = "/home/stephenk/Pictures/PFPs/ScreamingSUN.jpg"
 button_borders = true
 card_borders = true
 clipboard_auto_paste = "auto"
@@ -770,11 +803,12 @@ clipboard_enabled = true
 clipboard_history_max_entries = 100
 clipboard_image_action_command = ""
 clipboard_keep_from_closed_apps = true
+colorize_icons = false
 corner_radius_scale = 1.4000000208616257
 date_format = "%A, %x"
 disable_mipmaps = false
 external_ip_enabled = false
-font_family = "JetBrains Mono"
+font_family = "Gugi"
 input_borders = true
 launch_apps_as_systemd_services = false
 launch_apps_custom_command = ""
@@ -998,7 +1032,7 @@ custom_palette = "OuterWilds"
 mode = "dark"
 pure_black_dark = false
 shell_mode = "follow"
-source = "wallpaper"
+source = "custom"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
@@ -1072,8 +1106,8 @@ wallpaper_scheme = "m3-content"
         enabled = true
         hook_async = true
         index = 0
-        input_path = "~/.local/state/noctalia/plugins/materialized/community/palette-creator/templates/live-snapshot.tpl"
-        output_path = "~/.local/state/noctalia/plugin-data/kyle-palette-creator/live-snapshot.json"
+        input_path = "/home/stephenk/.local/state/noctalia/plugins/materialized/community/palette-creator/templates/live-snapshot.tpl"
+        output_path = "/home/stephenk/.local/state/noctalia/plugin-data/kyle-palette-creator/live-snapshot.json"
         output_path_dynamic = ""
         post_action = ""
         post_hook = ""
@@ -1111,393 +1145,393 @@ transition_on_startup = false
     recursive = false
 
     [wallpaper.default]
-    path = "~/Pictures/Wallpapers/naruto.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [wallpaper.last]
-    path = "~/Pictures/Wallpapers/naruto.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [wallpaper.monitor.eDP-1]
     fill_color = "surface"
     match = "eDP-1"
 
     [wallpaper.monitors.eDP-1]
-    path = "~/Pictures/Wallpapers/naruto.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [[wallpaper.favorite]]
     custom_palette = "OuterWilds"
     palette_source = "custom"
-    path = "~/Pictures/Wallpapers/OuterWildsSolarSystem.png"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSolarSystem.png"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/OuterWildsMain.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/Niko.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/Niko.jpeg"
     theme_mode = "dark"
     wallpaper_scheme = "soft"
 
     [[wallpaper.favorite]]
     custom_palette = "OuterWilds"
     palette_source = "custom"
-    path = "~/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/Owlek.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/Owlek.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "soft"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/TimberHearth.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/TimberHearth.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "vibrant"
 
     [[wallpaper.favorite]]
     custom_palette = "OuterWilds"
     palette_source = "custom"
-    path = "~/Pictures/Wallpapers/OuterWildsStargazing.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsStargazing.jpeg"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/OneShot.jpg"
-    theme_mode = "dark"
-    wallpaper_scheme = "soft"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/EndTimes.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/OneShot.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "soft"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/ClairObscur.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/EndTimes.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "soft"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/ClairObscur.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-tonal-spot"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/NewUniverse.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/NewUniverse.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/kaijuNo8.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/kaijuNo8.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/jujutsuKaisen.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/jujutsuKaisen.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/demonSlayer.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/demonSlayer.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-monochrome"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/drStone.png"
+    path = "/home/stephenk/Pictures/Wallpapers/drStone.png"
     theme_mode = "dark"
     wallpaper_scheme = "dysfunctional"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/jojo.png"
+    path = "/home/stephenk/Pictures/Wallpapers/jojo.png"
     theme_mode = "dark"
     wallpaper_scheme = "muted"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/attackOnTitan.png"
+    path = "/home/stephenk/Pictures/Wallpapers/attackOnTitan.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-monochrome"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/deathNote.png"
+    path = "/home/stephenk/Pictures/Wallpapers/deathNote.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-rainbow"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/projectHailMary.png"
+    path = "/home/stephenk/Pictures/Wallpapers/projectHailMary.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-rainbow"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/alita.png"
+    path = "/home/stephenk/Pictures/Wallpapers/alita.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/cyberpunkEdgerunners.png"
+    path = "/home/stephenk/Pictures/Wallpapers/cyberpunkEdgerunners.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-rainbow"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/dragonBall.png"
+    path = "/home/stephenk/Pictures/Wallpapers/dragonBall.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-tonal-spot"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/fullMetalAlchemist.png"
+    path = "/home/stephenk/Pictures/Wallpapers/fullMetalAlchemist.png"
     theme_mode = "dark"
     wallpaper_scheme = "vibrant"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/minecraft.png"
+    path = "/home/stephenk/Pictures/Wallpapers/minecraft.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/mobPsycho100.png"
+    path = "/home/stephenk/Pictures/Wallpapers/mobPsycho100.png"
     theme_mode = "dark"
     wallpaper_scheme = "faithful"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/starWars1.png"
+    path = "/home/stephenk/Pictures/Wallpapers/starWars1.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-tonal-spot"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/toBeHeroX.png"
+    path = "/home/stephenk/Pictures/Wallpapers/toBeHeroX.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/vinlandSaga.png"
+    path = "/home/stephenk/Pictures/Wallpapers/vinlandSaga.png"
     theme_mode = "dark"
     wallpaper_scheme = "muted"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/haloReach.png"
+    path = "/home/stephenk/Pictures/Wallpapers/haloReach.png"
     theme_mode = "dark"
     wallpaper_scheme = "muted"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/friren.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/friren.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     community_palette = "Ayu Red"
     palette_source = "community"
-    path = "~/Pictures/Wallpapers/gachiakuta.png"
+    path = "/home/stephenk/Pictures/Wallpapers/gachiakuta.png"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     community_palette = "Ayu Red"
     palette_source = "community"
-    path = "~/Pictures/Wallpapers/toBeHeroX.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/toBeHeroX.jpg"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/chainsawMan.png"
-    theme_mode = "dark"
-    wallpaper_scheme = "m3-content"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/StreetFighter6.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/chainsawMan.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/GuiltyGearStrive.png"
+    path = "/home/stephenk/Pictures/Wallpapers/StreetFighter6.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/GuiltyGearStrive.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-monochrome"
 
     [[wallpaper.favorite]]
     community_palette = "Ayu Red"
     palette_source = "community"
-    path = "~/Pictures/Wallpapers/ultrakill.png"
+    path = "/home/stephenk/Pictures/Wallpapers/ultrakill.png"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/terraria.jpg"
-    theme_mode = "dark"
-    wallpaper_scheme = "m3-tonal-spot"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/armoredCoreVI.jpg"
-    theme_mode = "dark"
-    wallpaper_scheme = "faithful"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/darkSoulsIII.jpg"
-    theme_mode = "dark"
-    wallpaper_scheme = "faithful"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/eldenRing.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/terraria.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-tonal-spot"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/eliteDangerous.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/armoredCoreVI.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "faithful"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/darkSoulsIII.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "faithful"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/eldenRing.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-tonal-spot"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/eliteDangerous.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     community_palette = "Ayu Red"
     palette_source = "community"
-    path = "~/Pictures/Wallpapers/godOfWar.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/godOfWar.jpg"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/horizonZeroDawn.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/horizonZeroDawn.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/SpiderManPS4.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/SpiderManPS4.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-tonal-spot"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/undertale.png"
+    path = "/home/stephenk/Pictures/Wallpapers/undertale.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-tonal-spot"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/celeste.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/celeste.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     community_palette = "Ayu Red"
     palette_source = "community"
-    path = "~/Pictures/Wallpapers/cultOfTheLamb.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/cultOfTheLamb.jpg"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/inscryption.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/inscryption.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/starWars2.png"
+    path = "/home/stephenk/Pictures/Wallpapers/starWars2.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-tonal-spot"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/tetrisEffect.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/tetrisEffect.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/sanabi.png"
+    path = "/home/stephenk/Pictures/Wallpapers/sanabi.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/Worldless.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/Worldless.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/enaDreamBBQ.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/enaDreamBBQ.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/katanaZero.png"
+    path = "/home/stephenk/Pictures/Wallpapers/katanaZero.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/myFriendPedro.png"
+    path = "/home/stephenk/Pictures/Wallpapers/myFriendPedro.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/portal2.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/portal2.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-rainbow"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/onePunchMan.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/onePunchMan.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-rainbow"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/helldiversII.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/helldiversII.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/assassinationClassroom.png"
+    path = "/home/stephenk/Pictures/Wallpapers/assassinationClassroom.png"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/mashle.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/mashle.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-tonal-spot"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/bleach.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/bleach.jpeg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/onePiece.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/onePiece.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "~/Pictures/Wallpapers/naruto.jpg"
+    path = "/home/stephenk/Pictures/Wallpapers/naruto.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
