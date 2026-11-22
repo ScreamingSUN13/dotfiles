@@ -3,8 +3,11 @@
 // Check the wiki for a full description of the configuration:
 // https://niri-wm.github.io/niri/Configuration:-Introduction
 
-// Noctalia syncing
-include "./cfg/noctalia.kdl"
+// animation
+include "./cfg/animations.kdl"
+
+// bind
+include "./cfg/bind.kdl"
 
 // Custom rules
 include "./cfg/customRules.kdl"
@@ -15,14 +18,14 @@ include "./cfg/inputDevices.kdl"
 // layout
 include "./cfg/layout.kdl"
 
-// screenshots
-include "./cfg/screenshots.kdl"
-
-// animation
-include "./cfg/animations.kdl"
-
-// bind
-include "./cfg/bind.kdl"
+// Noctalia syncing
+include "./cfg/noctalia.kdl"
 
 // Output 
 include "./cfg/output.kdl"
+
+// screenshots
+include "./cfg/screenshots.kdl"
+
+// startup
+include "./cfg/startup.kdl"
