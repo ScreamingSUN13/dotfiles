@@ -1,0 +1,12 @@
+// Startups
+spawn-at-startup "swaybg" "-o" "DP-3" "-i" "/home/stephenk/Pictures/Wallpapers/OuterWildsSolarSystem.png" "-m" "fill"
+spawn-at-startup "swaybg" "-o" "DP-1" "-i" "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg" "-m" "fill"
+spawn-at-startup "swaybg" "-o" "DP-2" "-i" "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg" "-m" "fill"
+
+spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
+spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
+
+spawn-at-startup "xwayland-satellite"
+
+// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
+spawn-at-startup "noctalia"

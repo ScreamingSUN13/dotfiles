@@ -1068,8 +1068,8 @@ custom_palette = "OuterWilds"
 mode = "dark"
 pure_black_dark = false
 shell_mode = "follow"
-source = "custom"
-wallpaper_scheme = "dysfunctional"
+source = "wallpaper"
+wallpaper_scheme = "m3-rainbow"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "niri", "qt" ]
@@ -1124,6 +1124,11 @@ wallpaper_scheme = "dysfunctional"
         post_action = ""
         post_hook = ""
         pre_hook = ""
+
+        [theme.templates.user.niri]
+        apost_hook = "niri msg action reload-config"
+        input_path = "~/.config/noctalia/templates/niri.kdl"
+        output_path = "~/.config/niri/cfg/noctalia.kdl"
 
         [theme.templates.user.oh_my_posh]
         compare_to = ""
@@ -1181,10 +1186,10 @@ transition_on_startup = false
     recursive = false
 
     [wallpaper.default]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/alanWeAreSoFucked.gif"
 
     [wallpaper.last]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/alanWeAreSoFucked.gif"
 
     [wallpaper.monitor.eDP-1]
     fill_color = "surface"
@@ -1203,7 +1208,7 @@ transition_on_startup = false
     path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
+    path = "/home/stephenk/Pictures/Wallpapers/alanWeAreSoFucked.gif"
 
     [[wallpaper.favorite]]
     custom_palette = "OuterWilds"
@@ -1482,12 +1487,6 @@ transition_on_startup = false
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
-    community_palette = "Ayu Red"
-    palette_source = "community"
-    path = "/home/stephenk/Pictures/Wallpapers/cultOfTheLamb.jpg"
-    theme_mode = "dark"
-
-    [[wallpaper.favorite]]
     palette_source = "wallpaper"
     path = "/home/stephenk/Pictures/Wallpapers/inscryption.jpg"
     theme_mode = "dark"
@@ -1660,6 +1659,42 @@ transition_on_startup = false
     path = "/home/stephenk/Pictures/Wallpapers/neirAutomata.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "soft"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/wizard.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-fruit-salad"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/alanWeAreSoFucked.gif"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-rainbow"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/enaDreamBBQ2.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-rainbow"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/smilingFriends.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "vibrant"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/marvel.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/cultOfTheLamb.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
 
 [weather]
 effects = true

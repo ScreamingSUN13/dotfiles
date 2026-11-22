@@ -1,7 +1,7 @@
-#[templates.niri]
-#input_path = "~/.config/noctalia/templates/niri.kdl"
-#output_path = "~/.config/niri/colors.kdl"
-#post_hook = "niri msg action reload-config"
+[theme.templates.user.niri]
+input_path = "~/.config/noctalia/templates/niri.kdl"
+output_path = "~/.config/niri/cfg/noctalia.kdl"
+apost_hook = "niri msg action reload-config"
 
 #[templates.nvim-base16]
 #input_path = "~/.config/nvim/lua/matugen-template.lua"

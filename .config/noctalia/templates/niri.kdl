@@ -1,6 +1,25 @@
 layout {
     focus-ring {
+        active-color "{{colors.source_color.default.hex}}"
+        inactive-color "{{colors.surface_container_high.default.hex}}"
+				urgent-color "{{colors.error.default.hex}}"
+    }
+
+    border {
         active-color "{{colors.outline.default.hex}}"
         inactive-color "{{colors.surface_container_high.default.hex}}"
+				urgent-color "{{colors.error.default.hex}}"
     }
+
+    tab-indicator {
+        active-color "{{colors.source_color.default.hex}}"
+        inactive-color "{{colors.primary_container.default.hex}}"
+				urgent-color "{{colors.error.default.hex}}"
+    }
+}
+recent-windows {
+	highlight {
+		active-color "{{colors.source_color.default.hex}}"
+		urgent-color "{{colors.error.default.hex}}"
+	}
 }
