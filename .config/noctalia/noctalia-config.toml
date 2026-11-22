@@ -1068,11 +1068,11 @@ custom_palette = "OuterWilds"
 mode = "dark"
 pure_black_dark = false
 shell_mode = "follow"
-source = "wallpaper"
-wallpaper_scheme = "m3-rainbow"
+source = "custom"
+wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "niri", "qt" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "qt" ]
     community_ids = [ "zen-browser", "discord", "neovim", "steam", "lazygit", "yazi" ]
     enable_builtin_templates = true
     enable_community_templates = true
@@ -1186,10 +1186,10 @@ transition_on_startup = false
     recursive = false
 
     [wallpaper.default]
-    path = "/home/stephenk/Pictures/Wallpapers/alanWeAreSoFucked.gif"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [wallpaper.last]
-    path = "/home/stephenk/Pictures/Wallpapers/alanWeAreSoFucked.gif"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [wallpaper.monitor.eDP-1]
     fill_color = "surface"
@@ -1208,7 +1208,7 @@ transition_on_startup = false
     path = "/home/stephenk/Pictures/Wallpapers/OuterWildsMain.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/stephenk/Pictures/Wallpapers/alanWeAreSoFucked.gif"
+    path = "/home/stephenk/Pictures/Wallpapers/OuterWildsSpace.jpeg"
 
     [[wallpaper.favorite]]
     custom_palette = "OuterWilds"
@@ -1659,18 +1659,6 @@ transition_on_startup = false
     path = "/home/stephenk/Pictures/Wallpapers/neirAutomata.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "soft"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "/home/stephenk/Pictures/Wallpapers/wizard.jpg"
-    theme_mode = "dark"
-    wallpaper_scheme = "m3-fruit-salad"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "/home/stephenk/Pictures/Wallpapers/alanWeAreSoFucked.gif"
-    theme_mode = "dark"
-    wallpaper_scheme = "m3-rainbow"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
