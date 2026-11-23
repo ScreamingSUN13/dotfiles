@@ -95,12 +95,28 @@ image_bound      = [ 10000, 10000 ]
 suppress_preload = false
 
 [plugin]
-#fetchers = [
-	# Mimetype
-	#{ id = "mime", url = "*/",         run = "mime.dir", prio = "high" },
-	#{ id = "mime", url = "local://*",  run = "mime.local", prio = "high" },
-	#{ id = "mime", url = "remote://*", run = "mime.remote", prio = "high" },
-#]
+prepend_previewers = [
+  # Markdown rendered with glow
+  { url = "*.md", run = "glow" },
+
+  # CSV/TSV as tables
+  { url = "*.csv", run = "miller" },
+
+	# DOCX as with piper
+	{ url = "*.docx", run = 'piper -- pandoc -t plain "$1"' },
+
+  # Media metadata
+  { mime = "{audio,video,image}/*", run = "mediainfo" },
+  { mime = "application/x-subrip", run = "mediainfo" },
+
+  # Archives via ouch
+  { mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}", run = "ouch" },
+]
+
+append_previewers = [
+  { url = "*", run = "hexyl" },
+]
+
 spotters = [
 	{ url = "*/", run = "folder" },
 	# Code
