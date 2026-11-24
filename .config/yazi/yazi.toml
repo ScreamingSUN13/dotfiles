@@ -96,26 +96,18 @@ suppress_preload = false
 
 [plugin]
 prepend_previewers = [
-  # Markdown rendered with glow
-  { url = "*.md", run = "glow" },
-
-  # CSV/TSV as tables
-  { url = "*.csv", run = "miller" },
-
-	# DOCX as with piper
-	{ url = "*.docx", run = 'piper -- pandoc -t plain "$1"' },
-
-  # Media metadata
-  { mime = "{audio,video,image}/*", run = "mediainfo" },
-  { mime = "application/x-subrip", run = "mediainfo" },
-
-  # Archives via ouch
-  { mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}", run = "ouch" },
+  { url = "*.docx", run = 'piper -- pandoc -t plain --columns=80 "$1"' },
+  { url = "*.odt",  run = 'piper -- pandoc -t plain --columns=80 "$1"' },
+  { url = "*.rtf",  run = 'piper -- pandoc -t plain --columns=80 "$1"' },
+  { url = "*.epub", run = 'piper -- pandoc -t plain --columns=80 "$1"' },
+	{ url = "*.xlsx", run = 'piper -- pandoc -t plain --columns=80 "$1"' },
+  { url = "*.pptx", run = 'piper -- pandoc -t plain --columns=80 "$1"' },
 ]
 
 append_previewers = [
   { url = "*", run = "hexyl" },
 ]
+
 
 spotters = [
 	{ url = "*/", run = "folder" },

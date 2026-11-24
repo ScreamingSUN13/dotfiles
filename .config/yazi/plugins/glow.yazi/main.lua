@@ -5,7 +5,7 @@ function M:peek(job)
 	local preview_width = 55
 
 	local child = Command("glow")
-		:args({
+		:arg({
 			"--style",
 			"dark",
 			"--width",
@@ -46,7 +46,7 @@ function M:peek(job)
 		})
 	else
 		lines = lines:gsub("\t", string.rep(" ", rt.preview.tab_size))
-		ya.preview_widgets(job, { ui.Text.parse(lines):area(job.area) })
+		ya.preview_widget(job, { ui.Text.parse(lines):area(job.area) })
 	end
 end
 
