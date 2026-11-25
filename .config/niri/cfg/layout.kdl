@@ -2,6 +2,11 @@
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
+		// Set width of focus-ring
+		focus-ring {
+			width 2.3333
+		}
+
     // Set gaps around windows in logical pixels.
     gaps 16
 
