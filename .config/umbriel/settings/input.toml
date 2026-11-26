@@ -20,4 +20,5 @@ follows_mouse = "sloppy" # "off", "sloppy", or "always"; always also refocuses a
 # enabled = true
 # map_to_output = "eDP-1"
 
-
+[input.touchpad]
+natural_scroll = true
