@@ -20,7 +20,8 @@
 files = [
 	"/usr/share/umbriel/effects/animation/workspace_wipe/effect.toml",
 	"/usr/share/umbriel/effects/animation/reveal/effect.toml",
-	"/usr/share/umbriel/effects/animation/squash/effect.toml"
+	"/usr/share/umbriel/effects/animation/squash/effect.toml",
+	"~/.config/umbriel/effects/burn/effect.toml"
 ]
 
 # Optional live workspace reveal (see docs/user/animation.md).
@@ -48,27 +49,31 @@ curve = "myBounce"
 # dim_behind = 0.5
 # Window rules accept dim_behind too; see docs/user/window-rules.md.
 
-[animation]
-enabled = true
-curve = "myBounce"
 
 [animation.windows_in]
 enabled = true
-curve = "myBounce2"
+curve = "linear"
+effect = "burn"
+duration_ms = 700
 scale = 0.5
 
 [animation.windows_out]
 enabled = true
-curve = "myBounce2"
+curve = "linear"
+effect = "burn"
+duration_ms = 700
 scale = 0.8
 
 [animation.windows_move]
 enabled = true
-curve = "myBounce2"
+curve = "ease"
+duration_ms = 700
 
 [animation.windows_resize]
 enabled = true
-curve = "myBounce"
+curve = "ease"
+duration_ms = 700
+
 
 [animation.windows_opacity]
 enabled = true
