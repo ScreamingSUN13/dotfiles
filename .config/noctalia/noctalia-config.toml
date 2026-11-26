@@ -25,10 +25,10 @@ order = [ "default", "sideDefault" ]
     capsule_border = "outline_variant"
     capsule_border_width = 1.0
     capsule_fill = "surface_container"
-    capsule_opacity = 0.74999998323619366
+    capsule_opacity = 0.7499999832361937
     capsule_padding = 7.0
     capsule_radius = 7.0
-    capsule_thickness = 0.60999999009072781
+    capsule_thickness = 0.6099999900907278
     center = [ "group:g7" ]
     color = "secondary"
     compositor_blur = true
@@ -103,38 +103,37 @@ order = [ "default", "sideDefault" ]
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "start"
-        border = "primary"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
-        fill = "on_primary"
+        fill = "surface_container"
         id = "g2"
-        members = [ "control-center", "tray", "bar", "clipboard", "mpvpaper", "widget" ]
-        opacity = 0.77999997138977051
+        members = [ "control-center", "brightness", "Divider", "bar", "clipboard", "widget_3", "mpvpaper", "widget", "tray" ]
+        opacity = 0.75
         padding = 6.0
 
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "start"
-        border = "primary"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
-        fill = "on_primary"
+        fill = "surface_container"
         id = "g1"
         members = [ "battery", "cpu", "GPU", "ram", "Storage" ]
-        opacity = 0.77999997138977051
+        opacity = 0.75
         padding = 6.0
-        radius = 9.0
 
         [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "start"
-        border = "primary"
+        border = "outline_variant"
         border_width = 1.0
         enabled = true
-        fill = "on_primary"
+        fill = "surface_container"
         id = "g3"
         members = [ "volume", "widget_2", "input_volume" ]
-        opacity = 0.77999997138977051
+        opacity = 0.75
         padding = 6.0
 
         [[bar.default.capsule_group]]
@@ -150,16 +149,17 @@ order = [ "default", "sideDefault" ]
         padding = 7.0
 
         [[bar.default.capsule_group]]
-        accordion = true
+        accordion = false
         accordion_direction = "end"
         border = "outline_variant"
         border_width = 1.0
         enabled = true
         fill = "surface_container"
         id = "g5"
-        members = [ "workspaces", "ActiveName" ]
+        members = [ "workspaces", "Divider", "bar_2" ]
         opacity = 0.75
         padding = 7.0
+        radius = 7.0
 
         [[bar.default.capsule_group]]
         accordion = true
@@ -224,7 +224,7 @@ order = [ "default", "sideDefault" ]
             "cat_17",
             "cat_18"
         ]
-        opacity = 0.69999998807907104
+        opacity = 0.699999988079071
         padding = 7.0
 
         [[bar.default.capsule_group]]
@@ -250,10 +250,10 @@ order = [ "default", "sideDefault" ]
     capsule_border_width = 1.0
     capsule_fill = "on_primary"
     capsule_group = []
-    capsule_opacity = 0.77999997138977051
+    capsule_opacity = 0.7799999713897705
     capsule_padding = 6.0
     capsule_radius = 9.0
-    capsule_thickness = 0.75999999046325684
+    capsule_thickness = 0.7599999904632568
     center = [ "cat_2", "clock", "cat" ]
     color = "secondary"
     compositor_blur = true
@@ -369,15 +369,15 @@ active_monitor_only = false
 active_opacity = 1.0
 active_scale = 1.0
 auto_hide = false
-background_opacity = 0.87999999523162842
+background_opacity = 0.8799999952316284
 border = "outline_variant"
 border_width = 0.0
 concave_edge_corners = true
 cross_axis_padding = 8
 enabled = false
 icon_size = 48
-inactive_opacity = 0.85000002384185791
-inactive_scale = 0.85000002384185791
+inactive_opacity = 0.8500000238418579
+inactive_scale = 0.8500000238418579
 item_spacing = 6
 launcher_custom_image = ""
 launcher_custom_image_colorize = false
@@ -546,6 +546,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -575,6 +576,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -604,6 +606,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -612,8 +615,8 @@ widget_order = [
     [lockscreen_widgets.widget."lockscreen-login-box@DP-4"]
     box_height = 196.0
     box_width = 810.0
-    cx = 960.00006103515625
-    cy = 861.60003662109375
+    cx = 960.0000610351562
+    cy = 861.6000366210938
     enabled = true
     output = "DP-4"
     placement_height = 1080.0
@@ -633,6 +636,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -668,12 +672,12 @@ widget_order = [
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 196.0
     box_width = 810.0
-    cx = 720.0
-    cy = 778.0
+    cx = 822.5001220703125
+    cy = 889.0270385742188
     enabled = true
     output = "eDP-1"
-    placement_height = 960.0
-    placement_width = 1440.0
+    placement_height = 1097.0
+    placement_width = 1645.0
     rotation = 0.0
     type = "login_box"
 
@@ -689,6 +693,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -717,6 +722,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
         show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
@@ -729,7 +735,7 @@ temperature_day = 6500
 temperature_night = 4500
 
 [notification]
-background_opacity = 0.97000002861022949
+background_opacity = 0.9700000286102295
 border = true
 border_color = "outline_variant"
 border_width = 1.0
@@ -750,7 +756,7 @@ show_app_name = true
 width = 360
 
 [osd]
-background_opacity = 0.79999998211860657
+background_opacity = 0.7999999821186066
 border = true
 border_color = "outline_variant"
 border_width = 1.0
@@ -812,7 +818,8 @@ enabled = [
     "yocraft/web-launcher",
     "alexander/game-launcher",
     "liamwh/emoji-picker",
-    "avivbintangaringga/nextboot-selector"
+    "avivbintangaringga/nextboot-selector",
+    "noctalia/umbriel-companion"
 ]
 
     [[plugins.source]]
@@ -1008,7 +1015,7 @@ umbriel_overview_type_to_launch_enabled = false
         variant = "destructive"
 
     [shell.shadow]
-    alpha = 0.55000001192092896
+    alpha = 0.550000011920929
     direction = "down_right"
 
     [shell.window_switcher]
@@ -1418,7 +1425,7 @@ transition_on_startup = false
     palette_source = "wallpaper"
     path = "/home/stephenk/Pictures/Wallpapers/GuiltyGearStrive.png"
     theme_mode = "dark"
-    wallpaper_scheme = "m3-monochrome"
+    wallpaper_scheme = "muted"
 
     [[wallpaper.favorite]]
     community_palette = "Ayu Red"
@@ -1455,12 +1462,6 @@ transition_on_startup = false
     path = "/home/stephenk/Pictures/Wallpapers/eliteDangerous.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
-
-    [[wallpaper.favorite]]
-    community_palette = "Ayu Red"
-    palette_source = "community"
-    path = "/home/stephenk/Pictures/Wallpapers/godOfWar.jpg"
-    theme_mode = "dark"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
@@ -1637,10 +1638,10 @@ transition_on_startup = false
     wallpaper_scheme = "m3-fruit-salad"
 
     [[wallpaper.favorite]]
-    community_palette = "Ayu Red"
-    palette_source = "community"
+    palette_source = "wallpaper"
     path = "/home/stephenk/Pictures/Wallpapers/sekiro.jpg"
     theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
@@ -1683,6 +1684,12 @@ transition_on_startup = false
     path = "/home/stephenk/Pictures/Wallpapers/cultOfTheLamb.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/godOfWar.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "muted"
 
 [weather]
 effects = true
@@ -1738,6 +1745,10 @@ width = 115
 
 [widget.bar]
 type = "yuuto/calculator:bar"
+
+[widget.bar_2]
+icon_color = "secondary"
+type = "noctalia/umbriel-companion:bar"
 
 [widget.cat]
 input_devices = [ "/dev/input/by-path/*-event-kbd", "/dev/input/by-path/*mouse" ]
