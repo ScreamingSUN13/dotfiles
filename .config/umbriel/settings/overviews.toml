@@ -39,6 +39,15 @@ style = "slide"          # Default: "slide"
 effect = "workspace_wipe"
 curve = "myBounce"
 
+[animation.windows_drag]
+physics = true
+stiffness = 100.0
+damping = 10.0
+coupling = 100.0
+pointer_response = 2.0
+max_displacement_px = 50.0
+settle_after_pause_s = 0.25
+
 # Shade over a window while a modal dialog is attached to it.
 # [animation.dialogs]
 # dim = 0.3
@@ -66,6 +75,7 @@ scale = 0.8
 
 [animation.windows_move]
 enabled = true
+effect = "squash"
 curve = "ease"
 duration_ms = 700
 

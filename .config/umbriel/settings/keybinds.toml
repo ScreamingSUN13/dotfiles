@@ -6,9 +6,9 @@
 # Actions: https://docs.noctalia.dev/umbriel/actions/
 [keybinds]
 # Effects
-"Mod+Shift+E" = "effect-border-cycle borders"
-"Mod+Ctrl+E" = "effect-border-toggle"
-"Mod+Alt+E" = "effect-border-reset"
+# "Mod+Shift+E" = "effect-border-cycle borders"
+# "Mod+Ctrl+E" = "effect-border-toggle"
+# "Mod+Alt+E" = "effect-border-reset"
 
 # Screenshot
 "Print" = "spawn noctalia msg screenshot-region"
@@ -17,6 +17,7 @@
 "Mod+S" = { action = "spawn noctalia msg settings-toggle" }
 "Mod+C" = { action = "spawn noctalia msg panel-toggle control-center" }
 "Mod+L" = { action = "spawn noctalia msg panel-toggle session" }
+"Mod+W" = { action = "spawn noctalia msg panel-toggle wallpaper" }
 
 "Mod+H" = { action = "workspace-set-layout toggle scrolling dwindle master" }
 "Mod+Ctrl+Alt+Left" = { action = "layout-master-count-increase" }
@@ -50,10 +51,10 @@
 "Mod+Ctrl+Down" = "workspace-next"
 
 "Mod+F1" = "window-focus-next"
-"Mod+Alt+Left" = "column-move-left"
+"Mod+Alt+Left" = "window-move-left"
 "Mod+Alt+Down" = "window-move-down"
 "Mod+Alt+Up" = "window-move-up"
-"Mod+Alt+Right" = "column-move-right"
+"Mod+Alt+Right" = "window-move-right"
 "Mod+Alt+Ctrl+Down" = "window-move-to-workspace-next"
 "Mod+Alt+Ctrl+Up" = "window-move-to-workspace-previous"
 
@@ -86,7 +87,7 @@
 "Mod+Ctrl+Period" = "window-consume-from-right"
 # Needs layout.mode = "dwindle".
 # "Mod+Alt+T" = "layout-toggle-split"
-"Mod+W" = { action = "column-toggle-tabbed", repeat = false }
+#"Mod+W" = { action = "column-toggle-tabbed", repeat = false }
 #"Mod+Alt+Right" = "column-focus-tab-next"
 #"Mod+Alt+Left" = "column-focus-tab-previous"
 "Mod+WheelUp" = "workspace-previous"
