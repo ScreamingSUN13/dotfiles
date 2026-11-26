@@ -25,11 +25,18 @@ files = [
 
 # Optional live workspace reveal (see docs/user/animation.md).
 # Add the bundled effects/animation/workspace_wipe/effect.toml to your includes.
+
+[animation.beziers]
+myBezier = [0.05, 0.9, 0.1, 1.05]
+
+[animation.springs]
+myBounce = { damping = 0.7, stiffness = 400 }
+myBounce2 = { damping = 1, stiffness = 150 }
+
 [animation.workspaces]
 style = "slide"          # Default: "slide"
 effect = "workspace_wipe"
-duration_ms = 300
-curve = "easeout"
+curve = "myBounce"
 
 # Shade over a window while a modal dialog is attached to it.
 # [animation.dialogs]
@@ -40,3 +47,55 @@ curve = "easeout"
 # match.namespace = "^vicinae$"
 # dim_behind = 0.5
 # Window rules accept dim_behind too; see docs/user/window-rules.md.
+
+[animation]
+enabled = true
+curve = "myBounce"
+
+[animation.windows_in]
+enabled = true
+curve = "myBounce2"
+scale = 0.5
+
+[animation.windows_out]
+enabled = true
+curve = "myBounce2"
+scale = 0.8
+
+[animation.windows_move]
+enabled = true
+curve = "myBounce2"
+
+[animation.windows_resize]
+enabled = true
+curve = "myBounce"
+
+[animation.windows_opacity]
+enabled = true
+curve = "myBounce"
+
+[animation.overview]
+enabled = true
+curve = "myBounce"
+workspace_curve = "myBounce"
+
+[animation.scratchpad]
+enabled = true
+curve = "myBounce"
+dim = 0.8
+blur = false
+
+[animation.dialogs]
+enabled = true
+dim = 0.3
+
+[animation.border]
+enabled = true
+curve = "myBounce"
+
+[animation.dim_unfocused]
+enabled = false
+dim = 0.0
+
+[animation.layers]
+enabled = false
