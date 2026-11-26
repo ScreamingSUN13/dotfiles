@@ -1,0 +1,33 @@
+# Umbriel starting configuration
+#
+# Copy this file to ~/.config/umbriel/config.toml. Most changes apply when the
+# file is saved. Check edits with `umbriel config validate`.
+#
+# Complete reference: https://docs.noctalia.dev/umbriel/
+#
+# Commented settings below are examples, not built-in defaults.
+
+# ==============================================================================
+# Includes
+
+# Optional split configuration
+# https://docs.noctalia.dev/umbriel/configuration/#include
+[include]
+files = [ 
+	"settings/appearances.toml", 
+	"settings/effects.toml", 
+	"settings/general.toml", 
+	"settings/global_shortcuts.toml", 
+	"settings/input.toml", 
+	"settings/keybinds.toml", 
+	"settings/layer_rules.toml", 
+	"settings/layout.toml", 
+	"settings/lid_events.toml", 
+	"settings/outputs.toml", 
+	"settings/overviews.toml", 
+	"settings/screencast.toml", 
+	"settings/window_rules.toml" 
+]
+
+[include.optional]
+files = ["noctalia.toml"]

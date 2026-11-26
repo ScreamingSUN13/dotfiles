@@ -1,0 +1,30 @@
+# ==============================================================================
+# Outputs
+# Outputs are machine-specific. Run `umbriel outputs` to find names and modes.
+# https://docs.noctalia.dev/umbriel/outputs/
+#
+# [output.DP-1]
+# mode = "2560x1440@144"
+# position = [0, 0]
+# scale = 1.25
+# vrr = "fullscreen"
+# hdr = "auto"
+# sdr_transfer = "gamma22" # Or "srgb" for piecewise SDR decoding in HDR.
+# color_profile = "edid" # Or a factory ICC path; with sdr_gamut = "srgb" a characterized panel describes itself to tagged clients.
+# sdr_gamut = "srgb" # Map untagged SDR into the panel gamut; "native" stages no mapping.
+
+[output."BNQ BenQ XL2430T D6G05878SL0"]
+mode="1920x1080@143.996"
+position=[0, 2160]
+
+[output."LG Electronics LG ULTRAGEAR 0x00051F49"]
+mode = "1920x1080@143.981"
+position=[1920, 2160]
+
+[output."Philips Consumer Electronics Company PHL 241V8LB TP02535011084"]
+mode="1920x1080@100"
+position=[3840, 2160]
+
+[output."Samsung Electric Company SAMSUNG 0x01000E00"]
+mode="3840x2160@60"
+position=[3840, 0]

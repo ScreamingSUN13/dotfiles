@@ -1,0 +1,9 @@
+# ==============================================================================
+# Global shortcut overrides use exact application and shortcut IDs.
+# An empty value disables a shortcut; new IDs still require physical approval.
+#
+# [global_shortcuts."org.example.App"]
+# "push-to-talk" = "Mod+Shift+M"
+# "toggle-overlay" = ""
+
+
