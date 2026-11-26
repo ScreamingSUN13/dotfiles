@@ -4,10 +4,10 @@
 # the overview after a short delay.
 # Overview: https://docs.noctalia.dev/umbriel/workspaces-overview/
 # Animation: https://docs.noctalia.dev/umbriel/animation/
-[hot_corners.top_left]
-enabled = true
-delay_ms = 500
-action = "overview-open"
+# [hot_corners.top_left]
+# enabled = true
+# delay_ms = 500
+# action = "overview-open"
 
 # Window-rule opacity and blur fade on focus changes by default. Disable this
 # independently of border fades, or choose its own duration and curve.
@@ -16,13 +16,20 @@ action = "overview-open"
 # curve = "spring:1,900"
 # duration_ms = 250 # For non-spring curves; a spring sets its own length.
 
+[include]
+files = [
+	"/usr/share/umbriel/effects/animation/workspace_wipe/effect.toml",
+	"/usr/share/umbriel/effects/animation/reveal/effect.toml",
+	"/usr/share/umbriel/effects/animation/squash/effect.toml"
+]
+
 # Optional live workspace reveal (see docs/user/animation.md).
 # Add the bundled effects/animation/workspace_wipe/effect.toml to your includes.
-# [animation.workspaces]
-# style = "reveal"          # Default: "slide"
-# effect = "workspace_wipe"
-# duration_ms = 300
-# curve = "easeout"
+[animation.workspaces]
+style = "slide"          # Default: "slide"
+effect = "workspace_wipe"
+duration_ms = 300
+curve = "easeout"
 
 # Shade over a window while a modal dialog is attached to it.
 # [animation.dialogs]

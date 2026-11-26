@@ -6,7 +6,10 @@
 # https://docs.noctalia.dev/umbriel/effects/
 #
 [include]
-files = ["/usr/share/umbriel/effects/border/pulse/effect.toml"]
+files = [
+	"/usr/share/umbriel/effects/border/pulse/effect.toml",
+	"/usr/share/umbriel/effects/border/audio/effect.toml"
+]
 # For a cursor tail, include /usr/share/umbriel/effects/cursor/trail/effect.toml
 # and set cursor = "trail" in [effects].
 # For audio-reactive borders, include /usr/share/umbriel/effects/border/audio/effect.toml
