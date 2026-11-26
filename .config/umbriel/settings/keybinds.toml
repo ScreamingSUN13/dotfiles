@@ -10,12 +10,17 @@
 "Mod+Ctrl+E" = "effect-border-toggle"
 "Mod+Alt+E" = "effect-border-reset"
 
+# Screenshot
+"Print" = "spawn noctalia msg screenshot-region"
+
 # Noctalia
 "Mod+S" = { action = "spawn noctalia msg settings-toggle" }
 "Mod+C" = { action = "spawn noctalia msg panel-toggle control-center" }
 "Mod+L" = { action = "spawn noctalia msg panel-toggle session" }
 
 "Mod+H" = { action = "workspace-set-layout toggle scrolling dwindle master" }
+"Mod+Ctrl+Alt+Left" = { action = "layout-master-count-increase" }
+"Mod+Ctrl+Alt+Right" = { action = "layout-master-count-decrease" }
 
 # Applications and session
 "Mod+T" = { action = "spawn kitty", repeat = false }
@@ -49,8 +54,6 @@
 "Mod+Alt+Down" = "window-move-down"
 "Mod+Alt+Up" = "window-move-up"
 "Mod+Alt+Right" = "column-move-right"
-"Mod+Alt+Ctrl+Left" = "column-move-left"
-"Mod+Alt+Ctrl+Right" = "column-move-right"
 "Mod+Alt+Ctrl+Down" = "window-move-to-workspace-next"
 "Mod+Alt+Ctrl+Up" = "window-move-to-workspace-previous"
 
