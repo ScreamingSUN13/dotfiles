@@ -14,7 +14,9 @@
 [[window_rule]]
 opacity = 0.9
 blur = true
-default_maximize = true
+
+[[window_rule]]
+default_scrolling_extent = 1.0
 
 [[window_rule]]
 match.app_id = "kitty"
