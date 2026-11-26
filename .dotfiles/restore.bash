@@ -36,9 +36,12 @@ sudo pacman -S --needed \
 	pastel \
 	gwenview \
 	ttf-jetbrains-mono \
-	mpv
+	mpv \
+	umbriel
+
 
 yay -S --needed \
 	oh-my-posh \
 	sddm-silent-theme \
-	cliamp
+	cliamp \
+	millenium
