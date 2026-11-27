@@ -12,6 +12,9 @@
 
 # Screenshot
 "Print" = "spawn noctalia msg screenshot-region"
+"Ctrl+Print" = "spawn noctalia msg screenshot-annotate"
+"Alt+Print" = "spawn noctalia msg screenshot-window"
+
 
 # Noctalia
 "Mod+S" = { action = "spawn noctalia msg settings-toggle" }

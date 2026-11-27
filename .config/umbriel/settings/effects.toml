@@ -4,12 +4,7 @@
 # scale with overview zoom. Include a bundled preset (adjust /usr for the
 # package prefix), then select it by name.
 # https://docs.noctalia.dev/umbriel/effects/
-#
-[include]
-files = [
-	"/usr/share/umbriel/effects/border/pulse/effect.toml",
-	"/usr/share/umbriel/effects/border/audio/effect.toml"
-]
+
 # For a cursor tail, include /usr/share/umbriel/effects/cursor/trail/effect.toml
 # and set cursor = "trail" in [effects].
 # For audio-reactive borders, include /usr/share/umbriel/effects/border/audio/effect.toml
@@ -38,3 +33,101 @@ files = [
 # For a screen effect only while an output is shared (a portal screen share or a
 # screenshot), include /usr/share/umbriel/effects/screen/vignette/effect.toml and
 # set screen_cast = "vignette" in [effects]; add in_capture = true for viewers to see it.
+
+[include]
+files = [
+	"/usr/share/umbriel/effects/animation/workspace_wipe/effect.toml",
+	"/usr/share/umbriel/effects/animation/reveal/effect.toml",
+	"/usr/share/umbriel/effects/animation/squash/effect.toml",
+	"/usr/share/umbriel/effects/border/pulse/effect.toml",
+	"/usr/share/umbriel/effects/border/audio/effect.toml",
+	"~/.config/umbriel/effects/burn/effect.toml"
+]
+
+[animation.beziers]
+myBezier = [0.05, 0.9, 0.1, 1.05]
+
+[animation.springs]
+myBounce = { damping = 0.7, stiffness = 400 }
+myBounce2 = { damping = 1, stiffness = 150 }
+
+[animation.workspaces]
+style = "slide"          # Default: "slide"
+effect = "workspace_wipe"
+curve = "myBounce"
+
+[animation.windows_drag]
+physics = true
+stiffness = 100.0
+damping = 10.0
+coupling = 100.0
+pointer_response = 2.0
+max_displacement_px = 50.0
+settle_after_pause_s = 0.25
+
+# Shade over a window while a modal dialog is attached to it.
+# [animation.dialogs]
+# dim = 0.3
+
+# Darken the output below a launcher while it is visible:
+# [[layer_rule]]
+# match.namespace = "^vicinae$"
+# dim_behind = 0.5
+# Window rules accept dim_behind too; see docs/user/window-rules.md.
+
+
+[animation.windows_in]
+enabled = true
+curve = "linear"
+effect = "burn"
+duration_ms = 700
+scale = 0.5
+
+[animation.windows_out]
+enabled = true
+curve = "linear"
+effect = "burn"
+duration_ms = 700
+scale = 0.8
+
+[animation.windows_move]
+enabled = true
+effect = "squash"
+curve = "ease"
+duration_ms = 700
+
+[animation.windows_resize]
+enabled = true
+curve = "ease"
+duration_ms = 700
+
+
+[animation.windows_opacity]
+enabled = true
+curve = "myBounce"
+
+[animation.overview]
+enabled = true
+curve = "myBounce"
+workspace_curve = "myBounce"
+
+[animation.scratchpad]
+enabled = true
+curve = "myBounce"
+dim = 0.8
+blur = false
+
+[animation.dialogs]
+enabled = true
+dim = 0.3
+
+[animation.border]
+enabled = true
+curve = "myBounce"
+
+[animation.dim_unfocused]
+enabled = false
+dim = 0.0
+
+[animation.layers]
+enabled = false

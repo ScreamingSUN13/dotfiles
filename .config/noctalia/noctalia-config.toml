@@ -942,18 +942,18 @@ umbriel_overview_type_to_launch_enabled = false
     size = 66
 
     [shell.screenshot]
-    annotate = false
+    annotate = true
     close_on_copy = true
     close_on_save = true
-    confirm_region = false
+    confirm_region = true
     copy_to_clipboard = true
     directory = ""
     filename_pattern = ""
     freeze_screen = true
     pipe_command = ""
     pipe_to_command = false
-    remember_last_region = false
-    save_to_file = true
+    remember_last_region = true
+		save_to_file = true
     show_cursor = false
     skip_annotate_on_copy_save = false
 
