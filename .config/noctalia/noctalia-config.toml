@@ -355,14 +355,66 @@ width = 800
 [desktop_widgets]
 enabled = true
 schema_version = 2
-widget_order = []
+widget_order = [ "desktop-widget-0000000000000002", "desktop-widget-0000000000000003", "desktop-widget-0000000000000001" ]
 
     [desktop_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
 
-    [desktop_widgets.widget]
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 160.0
+    box_width = 368.0
+    cx = 1439.0
+    cy = 981.0
+    output = "eDP-1"
+    placement_height = 1097.0
+    placement_width = 1645.0
+    rotation = 0.0
+    type = "clock"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = true
+        background_opacity = 0.25
+        background_padding = 0
+        background_radius = 32
+        color = "primary"
+        font_family = "OUTERwilds"
+        format = "{:%m:%M %p}"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 160.0
+    box_width = 368.0
+    cx = 215.0
+    cy = 987.0
+    output = "eDP-1"
+    placement_height = 1097.0
+    placement_width = 1645.0
+    rotation = -0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background_opacity = 0.0
+        background_radius = 32
+        bands = 32
+        color_1 = "primary"
+        show_when_idle = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 160.0
+    box_width = 368.0
+    cx = 215.0
+    cy = 987.0
+    output = "eDP-1"
+    placement_height = 1097.0
+    placement_width = 1645.0
+    rotation = 0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        background_opacity = 0.25
+        background_padding = 10
+        background_radius = 32
 
 [dock]
 active_monitor_only = false
@@ -953,7 +1005,7 @@ umbriel_overview_type_to_launch_enabled = false
     pipe_command = ""
     pipe_to_command = false
     remember_last_region = true
-		save_to_file = true
+    save_to_file = true
     show_cursor = false
     skip_annotate_on_copy_save = false
 
@@ -1076,10 +1128,10 @@ mode = "dark"
 pure_black_dark = false
 shell_mode = "follow"
 source = "custom"
-wallpaper_scheme = "m3-tonal-spot"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "qt" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "luciole", "qt", "umbriel" ]
     community_ids = [ "zen-browser", "discord", "neovim", "steam", "lazygit", "yazi" ]
     enable_builtin_templates = true
     enable_community_templates = true
@@ -1690,6 +1742,12 @@ transition_on_startup = false
     path = "/home/stephenk/Pictures/Wallpapers/godOfWar.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "muted"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/stephenk/Pictures/Wallpapers/ultrakill2.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
 
 [weather]
 effects = true
