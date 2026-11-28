@@ -168,7 +168,7 @@ Item {
             
             Text {
                 id: clockText
-                text: Qt.formatTime(new Date(), "HH:mm AP")
+                text: Qt.formatTime(new Date(), "hh:mm AP")
                 font {
                     family: mainFont.name
                     pixelSize: 102 * s
