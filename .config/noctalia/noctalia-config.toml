@@ -355,7 +355,7 @@ width = 800
 [desktop_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "desktop-widget-0000000000000002", "desktop-widget-0000000000000003", "desktop-widget-0000000000000001" ]
+widget_order = []
 
     [desktop_widgets.grid]
     cell_size = 16
@@ -1128,7 +1128,7 @@ mode = "dark"
 pure_black_dark = false
 shell_mode = "follow"
 source = "custom"
-wallpaper_scheme = "m3-content"
+wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "luciole", "qt", "umbriel" ]
