@@ -5,6 +5,7 @@
 #
 [general]
 autostart = ["noctalia"]
+show_cheatsheet = false
 # xwayland = false
 # Sharp X11 apps and games on scaled outputs; they see physical resolutions.
 # xwayland_native_resolution = true

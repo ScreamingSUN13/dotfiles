@@ -1,0 +1,9 @@
+[effects.preset."arcane.ekko-echo"]
+kind = "animation"
+shader = "shader.glsl"
+palette = true
+
+[effects.preset.workspace_echo]
+kind = "animation"
+shader = "workspace_echo.glsl"
+palette = true

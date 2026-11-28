@@ -41,7 +41,9 @@ files = [
 	"/usr/share/umbriel/effects/animation/squash/effect.toml",
 	"/usr/share/umbriel/effects/border/pulse/effect.toml",
 	"/usr/share/umbriel/effects/border/audio/effect.toml",
-	"~/.config/umbriel/effects/burn/effect.toml"
+	"~/.config/umbriel/effects/burn/effect.toml",
+	"~/.config/umbriel/effects/nomai/effect.toml",
+  "~/.config/umbriel/effects/arcane/ekko/effect.toml"
 ]
 
 [animation.beziers]
@@ -79,20 +81,20 @@ settle_after_pause_s = 0.25
 [animation.windows_in]
 enabled = true
 curve = "linear"
-effect = "burn"
+effect = "nomai_scan"
 duration_ms = 700
 scale = 0.5
 
 [animation.windows_out]
 enabled = true
 curve = "linear"
-effect = "burn"
+effect = "nomai_death"
 duration_ms = 700
 scale = 0.8
 
 [animation.windows_move]
 enabled = true
-effect = "squash"
+effect = "nomai_rewind"
 curve = "ease"
 duration_ms = 700
 
@@ -101,6 +103,9 @@ enabled = true
 curve = "ease"
 duration_ms = 700
 
+[effects]
+border = "nomai_twins"
+max_fps = 30
 
 [animation.windows_opacity]
 enabled = true

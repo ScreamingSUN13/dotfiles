@@ -1,0 +1,36 @@
+# Nomai-themed Umbriel effects.
+# Install to ~/.config/umbriel/effects/nomai/ and add this file to [include].files.
+
+[effects.preset.nomai_warp]
+kind = "animation"
+shader = "nomai_warp.glsl"
+palette = true
+
+[effects.preset.nomai_scan]
+kind = "animation"
+shader = "nomai_scan.glsl"
+palette = true
+
+[effects.preset.nomai_twins]
+kind = "border"
+shader = "nomai_twins.glsl"
+palette = true
+speed = 1.0
+
+[effects.preset.nomai_death]
+kind = "animation"
+shader = "nomai_death.glsl"
+palette = true
+
+[effects.preset.nomai_glyph_move]
+kind = "animation"
+shader = "nomai_glyph_move.glsl"
+palette = true
+
+[effects.preset.nomai_quantum]
+kind = "animation"
+shader = "nomai_quantum.glsl"
+ 
+[effects.preset.nomai_rewind]
+kind = "animation"
+shader = "nomai_rewind.glsl"
